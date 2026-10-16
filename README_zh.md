@@ -19,7 +19,7 @@
 <div align="center">
   
 ![平台](https://img.shields.io/badge/platform-Windows-blue)
-[![GitHub release](https://img.shields.io/github/v/release/baoxin1100/ok-kes)](https://github.com/baoxin1100/ok-kes/releases)
+[![GitHub release](https://img.shields.io/github/v/release/baoxin1100/ok-kes)](https://github.com/doubleD1302/ok-kes-VH/releases)
 
 </div>
 
@@ -39,7 +39,7 @@
 
 ## 🚀 快速开始
 
-1. **下载安装包**：前往 [GitHub Releases](https://github.com/baoxin1100/ok-kes/releases) 下载最新的安装程序。
+1. **下载安装包**：前往 [GitHub Releases](https://github.com/doubleD1302/ok-kes-VH/releases) 下载最新的安装程序。
 2. **安装并运行**：安装程序，启动后会自动更新到最新版本；启动游戏并连接游戏窗口，然后选择需要的功能运行。
 
 ## ✨ 主要功能

@@ -16,7 +16,7 @@
 <div align="center">
   
 ![Platform](https://img.shields.io/badge/platform-Windows-blue)
-[![GitHub release](https://img.shields.io/github/v/release/baoxin1100/ok-kes)](https://github.com/baoxin1100/ok-kes/releases)
+[![GitHub release](https://img.shields.io/github/v/release/baoxin1100/ok-kes)](https://github.com/doubleD1302/ok-kes-VH/releases)
 
 </div>
 
@@ -36,7 +36,7 @@ This software is open-source and free, intended for personal learning and commun
 
 ## 🚀 Quick Start
 
-1. **Download the Installer**: Go to [GitHub Releases](https://github.com/baoxin1100/ok-kes/releases) and download the latest installer.
+1. **Download the Installer**: Go to [GitHub Releases](https://github.com/doubleD1302/ok-kes-VH/releases) and download the latest installer.
 2. **Install and Run**: Install the program. It updates automatically after launch; start the game, connect its window, and select a feature to run.
 
 ## ✨ Main Features

@@ -19,7 +19,7 @@
 <div align="center">
   
 ![Nền tảng](https://img.shields.io/badge/platform-Windows-blue)
-[![GitHub release](https://img.shields.io/github/v/release/baoxin1100/ok-kes)](https://github.com/baoxin1100/ok-kes/releases)
+[![GitHub release](https://img.shields.io/github/v/release/baoxin1100/ok-kes)](https://github.com/doubleD1302/ok-kes-VH/releases)
 
 </div>
 
