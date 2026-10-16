@@ -96,7 +96,131 @@ def _get_card_reward_priority(task: TriggerTask):
 # 游戏语言 → 映射文件路径
 _GAME_LANG_FILE_MAP = {
     "繁体中文": os.path.join(os.path.dirname(__file__), 'assets', 'game_text_map', 'zh_tw.py'),
+    "English": os.path.join(os.path.dirname(__file__), 'assets', 'game_text_map', 'en.py'),
+    "Tiếng Việt": os.path.join(os.path.dirname(__file__), 'assets', 'game_text_map', 'vi.py'),
 }
+
+# 卡牌中英对照字典（支持官方EN名称及别名跨语言匹配）
+CARD_NAME_MAP = {
+    # 官方正式英文名称 (Official EN)
+    "展开极光": "Effulgent Expansion",
+    "解放极光": "Release Aurora",
+    "极光剑": "Effulgent Blade",
+    "凝聚极光": "Effulgent Compression",
+    "剑雨": "Sword Rain",
+    "一缕光芒": "Thread of Light",
+    "缕光芒": "Thread of Light",
+    "万众英雄": "Hero to All",
+    "水之源": "Source of Water",
+    "水之伞": "Water Barrier",
+    "海潮的庇护": "Blessing of Waves",
+    "剑幕": "Sword Barrier",
+    "剑光": "Sword Flash",
+    "作战分析": "Tactical Analysis",
+    "梦之边境": "Dream’s Edge",
+    # 兼容历史别名及备选名称 (Aliases & Fallbacks)
+    "Cast Aurora": "Effulgent Expansion",
+    "Aurora Blade": "Effulgent Blade",
+    "Rain of Swords": "Sword Rain",
+    "A Ray of Light": "Thread of Light",
+    "Ray of Light": "Thread of Light",
+    "Hero of All": "Hero to All",
+    "Water Umbrella": "Water Barrier",
+    "Shelter of the Tides": "Blessing of Waves",
+    "Sword Curtain": "Sword Barrier",
+    "Combat Analysis": "Tactical Analysis",
+    "Edge of Dreams": "Dream’s Edge",
+    "丢弃最多2张卡牌": "Discard up to 2 cards",
+    "自身攻击卡牌伤害总量提升30%": "Damage dealt by own Attack cards increased by 30%",
+}
+
+# 特战员中英对照字典
+MEMBER_NAME_MAP = {
+    "海德玛丽": "Heidemarie",
+    "九": "Nine",
+    "力": "Riki",
+    "绯": "Rin",
+    "米卡": "Mika",
+    "尼娅": "Nia",
+    "蒂菲拉": "Tiphereth",
+    "麦格纳": "Magna",
+    "卡修斯": "Cassius",
+    "黛安娜": "Diana",
+    "阿黛尔海特": "Adelheid",
+    "哈莉佩": "Khalipe",
+    "塞莱娜": "Selena",
+    "千影": "Chikage",
+    "Heidimarie": "Heidemarie",
+}
+
+# 装备中英对照字典
+EQUIPMENT_NAME_MAP = {
+    "蚀化臂铠": ["Corrupted Gauntlet", "Găng mục nát", "Corrosion Gauntlet"],
+    "拷问工具箱": ["Torture Toolbox", "Hộp dụng cụ tra tấn", "Torture Toolkit"],
+    "异象石碑": ["Stele of Heresy", "Bia đá dị tượng", "Anomaly Stele"],
+}
+
+# 路线选项多语言映射至标准内部类型
+ROUTE_NORMALIZE_MAP = {
+    "Rest": "休息",
+    "Nghỉ ngơi": "休息",
+    "Event": "事件",
+    "Sự kiện": "事件",
+    "Enemy": "小怪",
+    "Quái thường": "小怪",
+    "Elite": "精英",
+    "Tinh anh": "精英",
+}
+
+# 任务优先级多语言关键词对照
+TASK_NAME_MAP = {
+    "选取随机3条命运": ["Random Fates", "Fate", "Chọn 3 vận mệnh", "vận mệnh"],
+    "信用点增加": ["Credit", "Credits", "Credit Increase", "Tín dụng", "tín dụng", "Tăng tín dụng"],
+    "移除": ["Remove", "Delete", "Xóa", "xóa thẻ", "Xóa thẻ"],
+    "复制": ["Duplicate", "Copy", "Clone", "Sao chép", "nhân bản", "Sao chép thẻ"],
+    "咒术卡牌": ["Hex", "Curse", "Hex Card", "Nguyền rủa", "Thẻ nguyền rủa"],
+    "压力": ["Stress", "Breakdown", "Áp lực", "sụp đổ"],
+}
+
+def _match_card_name(configured_name, ocr_card_name):
+    """判断配置的卡牌名称与OCR识别到的卡牌名称是否匹配，支持中英双向映射与大小写不敏感。"""
+    c_norm = configured_name.strip().lower()
+    o_norm = ocr_card_name.strip().lower()
+    if c_norm in o_norm or o_norm in c_norm:
+        return True
+    target_synonyms = set()
+    for zh, en in CARD_NAME_MAP.items():
+        all_variants = [zh, en]
+        if any(c_norm == v.strip().lower() or v.strip().lower() in c_norm for v in all_variants):
+            target_synonyms.update(v.strip().lower() for v in all_variants)
+            target_official = CARD_NAME_MAP.get(zh, en)
+            for alt_zh, alt_en in CARD_NAME_MAP.items():
+                if alt_en == en or alt_en == target_official or alt_zh == zh:
+                    target_synonyms.add(alt_zh.strip().lower())
+                    target_synonyms.add(alt_en.strip().lower())
+    for syn in target_synonyms:
+        if syn in o_norm or o_norm in syn:
+            return True
+    return False
+
+def _match_task_keyword(keyword, description):
+    """匹配任务优先级关键词，支持多语言双向近义词查找。"""
+    if not keyword or not description:
+        return False
+    k_lower = keyword.strip().lower()
+    d_lower = description.lower()
+    if k_lower in d_lower or is_subsequence(keyword, description):
+        return True
+    all_syns = set()
+    for zh_key, syn_list in TASK_NAME_MAP.items():
+        group = [zh_key] + syn_list
+        if any(k_lower == s.lower() or s.lower() in k_lower for s in group):
+            all_syns.update(s.lower() for s in group)
+    for syn in all_syns:
+        if syn in d_lower or is_subsequence(syn, description):
+            return True
+    return False
+
 # 已加载的映射缓存 {语言: SERVER_TEXT_MAP字典}
 _LOADED_MAPS = {}
 
@@ -155,9 +279,10 @@ def _migrate_route_boss_to_elite(task: TriggerTask):
 
 
 def _get_route_priority(task: TriggerTask):
-    """读取路线节点优先级配置，返回列表；解析失败使用默认顺序。"""
+    """读取路线节点优先级配置，返回列表；解析失败使用默认顺序。支持多语言路由选项映射。"""
     value = _get_config_value(task, '路线优先级', ["休息", "事件", "小怪", "精英"])
-    return list(value) if isinstance(value, (list, tuple)) else ["休息", "事件", "小怪", "精英"]
+    raw_list = list(value) if isinstance(value, (list, tuple)) else ["休息", "事件", "小怪", "精英"]
+    return [ROUTE_NORMALIZE_MAP.get(item, item) for item in raw_list]
 
 
 # ------------------------- 通用工具 -------------------------
@@ -1137,15 +1262,52 @@ def _mark_selected_card_by_gold_border(
         task.log_info(f"{prefix}未检测到选中卡牌的金色边框")
 
 
+MULTI_LANG_SYNONYMS = {
+    "确认": ["确认", "confirm", "ok", "xác nhận", "xac nhan", "xacnhan", "xácnhận"],
+    "进入": ["进入", "enter", "tiến vào", "tien vao", "vào", "vao", "tienvao", "tiếnvào"],
+    "离开": ["离开", "leave", "exit", "rời khỏi", "roi khoi", "roikhoi", "rờikhỏi"],
+    "获得": ["获得", "obtain", "claim", "nhận", "nhan", "thu nhận", "thunhan", "thunhận", "nhận được"],
+    "跳过": ["跳过", "skip", "bỏ qua", "bo qua", "boqua", "bỏqua"],
+    "选择": ["选择", "select", "choose", "chọn", "chon"],
+    "合成": ["合成", "merge", "synthesize", "craft", "hợp thành", "hop thanh", "tổng hợp", "tong hop", "hopthanh", "hợpthành", "tonghop", "tổnghợp"],
+    "复制": ["复制", "copy", "duplicate", "sao chép", "sao chep", "nhân bản", "nhan ban", "saochep", "saochép", "nhanban", "nhânbản"],
+    "移除": ["移除", "remove", "delete", "xóa", "xoa", "loại bỏ"],
+    "结算": ["结算", "settle", "settlement", "kết toán", "ket toan", "tổng kết", "tong ket", "kettoan", "kếttoán", "tongket", "tổngkết"],
+    "赋予闪光": ["赋予闪光", "grantflash", "epiphany", "khai sáng", "khai sang", "linh cảm", "linh cam", "lóe sáng", "loesang", "lóesáng"],
+    "转换": ["转换", "convert", "chuyển đổi", "chuyen doi", "chuyendoi", "chuyểnđổi"],
+    "前往卡厄思核心": ["前往卡厄思核心", "gotocore", "proceedtochaoscore", "chaoscore", "đến lõi kaos", "đến lõi chaos", "lõi kaos", "lõi chaos", "denloikaos", "loikaos", "loichaos"],
+    "再次观测": ["再次观测", "observeagain", "observe", "quan sát lại", "quan sat lai", "quansatlai", "quansátlại"],
+    "卡厄思合成": ["卡厄思合成", "chaosfusion", "chaossynthesis", "chaos merge", "hợp thành chaos", "tổng hợp chaos", "tonghopchaos", "hopthanhchaos"],
+    "免费合成": ["免费合成", "freefusion", "freesynthesis", "free", "miễn phí", "mien phi", "tổng hợp miễn phí", "tonghopmienphi", "mienphi", "miễnphí"],
+    "征服新难度": ["征服新难度", "conquernewdifficulty", "newdifficulty", "chinh phục độ khó mới", "độ khó mới", "dokhomoi", "độkhómới"],
+    "出现错乱": ["出现错乱", "error", "glitch", "rối loạn", "roi loan", "roiloan", "rốiloạn", "lỗi", "loi"],
+    "点击重试": ["点击重试", "retry", "thử lại", "thu lai", "thulai", "thửlại"],
+    "通讯不稳定": ["通讯不稳定", "unstable", "đường truyền", "duong truyen", "duongtruyen", "đườngtruyền"],
+    "法典": ["法典", "codex"],
+    "卡厄思": ["卡厄思", "chaos", "kaos"],
+}
+
+
 def find_text(task: TriggerTask, pattern):
-    """按正则在所有识别文本中查找第一个匹配的 box。"""
-    return next((b for b in task.all_texts if re.search(pattern, b.name)), None)
+    """按正则在所有识别文本中查找第一个匹配的 box。支持多语言近义词查找与大小写不敏感。"""
+    for key, syns in MULTI_LANG_SYNONYMS.items():
+        if key in pattern or pattern in syns:
+            regex_pat = "(?i)(" + "|".join(re.escape(s) for s in syns) + ")"
+            hit = next((b for b in task.all_texts if re.search(regex_pat, b.name)), None)
+            if hit:
+                return hit
+    return next((b for b in task.all_texts if re.search(pattern, b.name, re.IGNORECASE)), None)
 
 
 def _clean_match(name, target):
-    """去除OCR文本中的非中文/字母/数字符号后比较是否等于 target。"""
-    cleaned = re.sub(r'[^\u4e00-\u9fff\w]', '', name)
-    return cleaned == target
+    """去除OCR文本中的非中文/字母/数字符号后比较是否等于 target。支持多语言近义词匹配。"""
+    cleaned = re.sub(r'[^\u4e00-\u9fff\w]', '', name).lower()
+    if target in MULTI_LANG_SYNONYMS:
+        synonyms = [re.sub(r'[^\u4e00-\u9fff\w]', '', s).lower() for s in MULTI_LANG_SYNONYMS[target]]
+        return cleaned in synonyms or any(s in cleaned for s in synonyms if len(s) >= 4)
+    target_cleaned = re.sub(r'[^\u4e00-\u9fff\w]', '', target).lower()
+    return cleaned == target_cleaned
+
 
 
 def _get_region_text(task: TriggerTask, region):
@@ -1343,7 +1505,7 @@ def select_card(task: TriggerTask, card_names, count=1, action=""):
                 if card["selected"]:
                     continue
                 card_name = card["name"].strip()
-                if target not in card_name and card_name not in target:
+                if not _match_card_name(target, card_name):
                     continue
                 task.log_info(
                     f"{page}: 命中优先级「{target}」，点击目标卡牌「{card['name']}」"
@@ -2857,7 +3019,7 @@ def handle_copy_card_choice(task: TriggerTask):
     priority = _get_config_value(task, '复制卡牌列表', [])
     for pri_name in priority:
         for card in cards:
-            if card["name"] and pri_name in card["name"]:
+            if card["name"] and _match_card_name(pri_name, card["name"]):
                 task.log_info(f"复制卡牌选择: 按优先级选择「{card['name']}」(匹配「{pri_name}」)")
                 _move_and_click(task, card["x"], card["y"])
                 task.sleep(0.5)
@@ -3300,7 +3462,7 @@ def handle_event_task(task: TriggerTask):
     chosen = None
     for keyword in priority:
         for t in tasks_info:
-            if is_subsequence(keyword, t['description']):
+            if _match_task_keyword(keyword, t['description']):
                 chosen = t
                 task.log_info(f"优先选择「{keyword}」-> 描述: {t['description']}")
                 break
@@ -3561,7 +3723,7 @@ def handle_next_step(task: TriggerTask):
         cx = (b.x + b.width / 2) / task.width
         cy = (b.y + b.height / 2) / task.height
         if x1 <= cx <= x2 and y1 <= cy <= y2:
-            if _edit_distance(b.name, "下一步", max_dist=2):
+            if any(_edit_distance(b.name.lower(), kw.lower(), max_dist=2) for kw in ["下一步", "Next", "Tiếp theo", "Tieptheo"]):
                 task.log_info(f"检测到下一步按钮「{b.name}」，点击")
                 task.click_box(b)
                 task.sleep(1)

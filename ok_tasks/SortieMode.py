@@ -69,15 +69,30 @@ class SortieMode(TriggerTask):
             "deck": {},
         }
 
-        all_members = ["海德玛丽", "九", "力", "绯", "米卡", "尼娅", "蒂菲拉", "麦格纳", "卡修斯", "黛安娜", "阿黛尔海特"]
-        all_cards = ["展开极光", "解放极光", "极光剑", "凝聚极光", "剑雨", "一缕光芒", "缕光芒", "万众英雄", "水之源", "水之伞", "海潮的庇护", "剑幕", "剑光", "作战分析", "梦之边境"]
-        all_routes = ["休息", "事件", "小怪", "精英"]
-        all_tasks = ["选取随机3条命运", "信用点增加", "移除", "复制", "咒术卡牌", "压力"]
-        all_equipments = ["蚀化臂铠", "拷问工具箱", "异象石碑"]
+        all_members = [
+            "海德玛丽", "九", "力", "绯", "米卡", "尼娅", "蒂菲拉", "麦格纳", "卡修斯", "黛安娜", "阿黛尔海特",
+            "Heidemarie", "Nine", "Riki", "Rin", "Mika", "Nia", "Tiphereth", "Magna", "Cassius", "Diana", "Adelheid", "Khalipe", "Selena", "Chikage", "Heidimarie"
+        ]
+        all_cards = [
+            "展开极光", "解放极光", "极光剑", "凝聚极光", "剑雨", "一缕光芒", "缕光芒", "万众英雄", "水之源", "水之伞", "海潮的庇护", "剑幕", "剑光", "作战分析", "梦之边境",
+            "Effulgent Expansion", "Release Aurora", "Effulgent Blade", "Effulgent Compression", "Sword Rain", "Thread of Light", "Hero to All", "Source of Water", "Water Barrier", "Blessing of Waves", "Sword Barrier", "Sword Flash", "Tactical Analysis", "Dream’s Edge",
+            "Cast Aurora", "Aurora Blade", "Rain of Swords", "A Ray of Light", "Hero of All", "Water Umbrella", "Shelter of the Tides", "Sword Curtain", "Combat Analysis", "Edge of Dreams"
+        ]
+        all_routes = ["休息", "事件", "小怪", "精英", "Rest", "Event", "Enemy", "Elite", "Nghỉ ngơi", "Sự kiện", "Quái thường", "Tinh anh"]
+        all_tasks = [
+            "选取随机3条命运", "信用点增加", "移除", "复制", "咒术卡牌", "压力",
+            "Random Fates", "Credit Increase", "Remove", "Duplicate", "Hex Card", "Stress",
+            "Chọn 3 vận mệnh", "Tăng tín dụng", "Xóa thẻ", "Sao chép", "Nguyền rủa", "Áp lực"
+        ]
+        all_equipments = [
+            "蚀化臂铠", "拷问工具箱", "异象石碑",
+            "Corrupted Gauntlet", "Torture Toolbox", "Stele of Heresy",
+            "Corrosion Gauntlet", "Torture Toolkit", "Anomaly Stele"
+        ]
 
         self._last_upload_time = 0
         self.config_type = {
-            '游戏语言': {'type': 'drop_down', 'options': ['简体中文', '繁体中文']},
+            '游戏语言': {'type': 'drop_down', 'options': ['简体中文', '繁体中文', 'English', 'Tiếng Việt']},
             '配置操作': {
                 'type': 'button',
                 'buttons': [
@@ -98,7 +113,7 @@ class SortieMode(TriggerTask):
             '闪光卡牌列表': {'type': 'drop_down', 'allow_duplication': False, 'options_available': all_cards},
             '移除卡牌列表': {'type': 'drop_down', 'allow_duplication': False, 'options_available': all_cards},
             '丢弃卡牌优先级': {'type': 'drop_down', 'allow_duplication': False, 'options_available': all_cards},
-            '卡牌奖励优先级': {'type': 'drop_down', 'allow_duplication': False, 'options_available': ["梦之边境", "装备包"]},
+            '卡牌奖励优先级': {'type': 'drop_down', 'allow_duplication': False, 'options_available': ["梦之边境", "装备包", "Edge of Dreams"]},
             '路线优先级': {'type': 'drop_down', 'allow_duplication': False, 'options_available': all_routes},
             '任务优先级': {'type': 'drop_down', 'allow_duplication': False, 'options_available': all_tasks},
             '拉黑任务': {'type': 'drop_down', 'allow_duplication': False, 'options_available': all_tasks},
@@ -106,7 +121,7 @@ class SortieMode(TriggerTask):
             '装备2号位优先级': {'type': 'drop_down', 'allow_duplication': False, 'options_available': all_equipments},
             '装备3号位优先级': {'type': 'drop_down', 'allow_duplication': False, 'options_available': all_equipments},
         }
-        self.config_description['游戏语言'] = "国际服请设置为繁体中文"
+        self.config_description['游戏语言'] = "Chọn ngôn ngữ game tương ứng: 简体中文, 繁体中文, English (Global) hoặc Tiếng Việt (Bản Việt hóa)."
 
     def load_config(self):
         migrate_game_language_config_file(self)
