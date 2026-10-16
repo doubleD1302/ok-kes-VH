@@ -10,6 +10,7 @@ from qfluentwidgets import qconfig, FluentIcon, NavigationItemPosition, MessageB
     InfoBarPosition, MessageBoxBase, FluentWindow, NavigationDisplayMode, isDarkTheme, Theme
 from qfluentwidgets.components.widgets.scroll_bar import ScrollBarHandleDisplayMode
 from qfluentwidgets.common.style_sheet import updateStyleSheet
+import ok.gui.widget.SpinBoxPatch
 
 _original_MessageBoxBase_keyPressEvent = MessageBoxBase.keyPressEvent
 

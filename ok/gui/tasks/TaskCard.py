@@ -36,6 +36,7 @@ class TaskCard(ConfigCard):
 
         if getattr(self.task, 'is_custom', False):
             self.edit_button = PushButton(FluentIcon.EDIT, self.tr("Edit"), self)
+            self.edit_button.setToolTip(self.tr("Edit task script code"))
             self.edit_button.clicked.connect(self.edit_clicked)
         else:
             self.edit_button = None

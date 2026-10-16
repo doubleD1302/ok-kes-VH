@@ -104,6 +104,7 @@ class SortieMode(TriggerTask):
                 ],
             },
             '第几层boss前自动暂停': {'type': 'drop_down', 'options': ['不暂停', '1', '2', '3']},
+            '几轮后停止(0为不停止)': {'min': 0, 'max': 9999},
             '出战主战员优先级': {'type': 'drop_down', 'allow_duplication': False, 'options_available': all_members},
             '主战员优先级': {'type': 'drop_down', 'allow_duplication': False, 'options_available': all_members},
             '拉黑主战员': {'type': 'drop_down', 'allow_duplication': False, 'options_available': all_members},
