@@ -21,8 +21,11 @@ class ChaosMode(TriggerTask):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.name = "自动卡厄思模式"
-        self.description = "1. 请主动打开游戏内自动战斗和自动剧情功能。\n2. 国际服玩家请将本模式配置中的\"游戏语言\"设置为繁体中文。"
-        self.instructions = """<a href="https://github.com/ok-oldking/ok-py">ok-py</a>"""
+        self.instructions = """<b>Chế độ Tự động Kaos (Auto Chaos):</b><br><br>
+1. <b>Cách bật:</b> Xếp sẵn đội hình 3 người trong game, điền tên chủ lực vào [Đặc vụ cày file lưu], vào giao diện ải Kaos rồi gạt công tắc BẬT.<br>
+2. <b>Tính năng:</b> Tự động trị liệu sụp đổ tinh thần, xóa bản lưu dưới mức TB quy định, vào shop Delang xóa bài.<br>
+3. <b>Mẹo cấu hình:</b> Nhấp nút [Cấu hình phổ biến] để áp dụng bộ cài đặt tối ưu cho Đặc vụ của bạn.<br>
+4. <b>Server Quốc tế (Global):</b> Đổi mục [Ngôn ngữ game] thành Phồn thể (繁体中文)."""
         self.trigger_interval = 1
         self.all_texts = []
         # 默认关闭，由用户在界面中手动启停，保持 TriggerTask 自己作为主任务运行

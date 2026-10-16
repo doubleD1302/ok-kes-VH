@@ -20,7 +20,7 @@
 
 </div>
 
-English | [中文说明](README.md)
+### English | [Tiếng Việt](README.md) | [中文说明](README_zh.md)
 
 > 📖 **New user? Start with the [Complete Usage Guide (Chinese)](docs/zh-CN/usage-guide.md).**
 

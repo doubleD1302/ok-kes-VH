@@ -8,8 +8,10 @@ class StoryMode(TriggerTask):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.name = "半自动剧情模式"
-        self.description = "1.剧情内战斗关卡可手动开启出击模式调用自动战斗功能。\n2. 遇到卡厄思关卡请手动打开卡厄思模式。\n3. 剧情战斗关卡队伍需手动配置"
-        self.instructions = """<a href="https://github.com/ok-oldking/ok-py">ok-py</a>"""
+        self.instructions = """<b>Chế độ Bán tự động Cốt truyện (Story Mode):</b><br><br>
+1. <b>Cách bật:</b> Bật khi đang ở các phân cảnh hội thoại hoặc bản đồ cốt truyện để tự động tua nhanh lời thoại.<br>
+2. <b>Khi gặp ải chiến đấu:</b> Chọn người thủ công hoặc chuyển sang bật [Tự động Xuất kích] để bot tự đánh.<br>
+3. <b>Khi gặp ải Kaos:</b> Chuyển sang bật [Tự động Khiêu chiến Chaos]."""
         self.trigger_interval = 1
         self.all_texts = []
         # 默认关闭，由用户在界面中手动启停，保持 TriggerTask 自己作为主任务运行

@@ -63,16 +63,16 @@ def resolve_use_openvino():
     backend = _read_ocr_backend()
     if backend == OCR_BACKEND_OPENVINO:
         if _openvino_is_available():
-            print("OCR 后端：OpenVINO（用户指定）")
+            print("Backend OCR: OpenVINO (Người dùng chỉ định)")
             return True
-        print("OpenVINO 不可用，OCR 后端自动回退到 ONNX Runtime")
+        print("OpenVINO không khả dụng, backend OCR tự động chuyển về ONNX Runtime")
         return False
     if backend == OCR_BACKEND_AUTO:
         use_openvino = _auto_use_openvino()
         selected_backend = OCR_BACKEND_OPENVINO if use_openvino else OCR_BACKEND_ONNX
-        print(f"OCR 后端：{selected_backend}（自动选择）")
+        print(f"Backend OCR: {selected_backend} (Tự động chọn)")
         return use_openvino
-    print("OCR 后端：ONNX Runtime（用户指定）")
+    print("Backend OCR: ONNX Runtime (Người dùng chỉ định)")
     return False
 
 key_config_option = ConfigOption('Game Hotkey Config', { #全局配置示例
@@ -185,7 +185,7 @@ config = {
             }
         },
     'screenshots_folder': "screenshots", #截图存放目录, 每次重新启动会清空目录
-    'gui_title': 'ok-kes',  #窗口名
+    'gui_title': 'ok-kes - Tự động Kaos Dream',  # Tên cửa sổ ứng dụng
     'template_matching': { # 可选, 如使用OpenCV的模板匹配
         'coco_feature_json': os.path.join('ok_tasks/assets', 'coco_annotations.json'), #coco格式标记, 需要png图片, 在debug模式运行后, 会对进行切图仅保留被标记部分以减少图片大小
         'default_horizontal_variance': 0.002, #默认x偏移, 查找不传box的时候, 会根据coco坐标, match偏移box内的
@@ -194,6 +194,9 @@ config = {
     },
     'version': version, #版本
     'my_app': ['src.globals', 'Globals'], #可选. 全局单例对象, 可以存放加载的模型, 使用og.my_app调用
+    'custom_tabs': [
+        ["src.ui.GuideTab", "GuideTab"],
+    ],
     'onetime_tasks': [  # 用户点击触发的任务
         ["src.tasks.MyOneTimeTask", "MyOneTimeTask"],
         ["ok", "DiagnosisTask"],

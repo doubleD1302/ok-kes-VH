@@ -17,16 +17,15 @@ __pycache__/
 data/
 ok_tasks/*.backup_*
 *$py.class
-configs/
+configs/*
+!configs/ui_config.json
 paddle_model/
-ok/
-*.dat
-ok
 md5.txt
 update.bat
 click_screenshots/
 test_scripts/
 screenshots/
+cache/
 thread_dumps.txt
 *.so
 *.bat
@@ -65,4 +64,5 @@ pip-log.txt
 pip-delete-this-directory.txt
 autohelper
 working_images/
-pyappify/
+# pyappify/
+

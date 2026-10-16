@@ -19,10 +19,10 @@ class MyTab(CustomTab):
         })
         self.icon = FluentIcon.FLAG
 
-        self.label = BodyLabel("This is a custom Tab")
+        self.label = BodyLabel("Đây là Tab tùy chỉnh")
         self.add_widget(self.label)
 
-        self.button = PrimaryPushButton("This is a button")
+        self.button = PrimaryPushButton("Đây là một nút bấm")
         self.button.clicked.connect(self.button_clicked)
         self.add_widget(self.button)
 

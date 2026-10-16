@@ -1,0 +1,553 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: support@example.com\n"
+"Last-Translator: Antigravity <support@example.com>\n"
+"Language-Team: Vietnamese\n"
+"Language: vi_VN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid ""
+"1. 自动战斗依赖按键识别，请在游戏设置中打开快捷键显示，提升出牌准确率。\n"
+"2. 国际服玩家请将本模式配置中的\"游戏语言\"设置为繁体中文。"
+msgstr ""
+"1. Tự động chiến đấu phụ thuộc vào nhận diện phím tắt, vui lòng bật hiển thị phím tắt trong cài đặt game để tăng độ chính xác ra bài.\n"
+"2. Người chơi máy chủ Quốc tế (Global) vui lòng đặt \"Ngôn ngữ game\" trong cấu hình chế độ này thành Phồn thể (繁体中文)."
+
+msgid ""
+"1. 请主动打开游戏内自动战斗和自动剧情功能。\n"
+"2. 国际服玩家请将本模式配置中的\"游戏语言\"设置为繁体中文。"
+msgstr ""
+"1. Vui lòng chủ động bật tính năng tự động chiến đấu và tự động cốt truyện trong game.\n"
+"2. Người chơi máy chủ Quốc tế (Global) vui lòng đặt \"Ngôn ngữ game\" trong cấu hình chế độ này thành Phồn thể (繁体中文)."
+
+msgid ""
+"1.剧情内战斗关卡可手动开启出击模式调用自动战斗功能。\n"
+"2. 遇到卡厄思关卡请手动打开卡厄思模式。\n"
+"3. 剧情战斗关卡队伍需手动配置"
+msgstr ""
+"1. Trong các ải chiến đấu của cốt truyện, có thể mở thủ công chế độ Xuất kích để dùng tính năng tự động chiến đấu.\n"
+"2. Khi gặp ải Chaos, vui lòng mở thủ công chế độ Chaos.\n"
+"3. Đội hình ải chiến đấu cốt truyện cần thiết lập thủ công."
+
+msgid "Available Drop Down Value 1"
+msgstr "Giá trị Thả xuống Khả dụng 1"
+
+msgid "Available Drop Down Value 2"
+msgstr "Giá trị Thả xuống Khả dụng 2"
+
+msgid "Available Drop Down Value 3"
+msgstr "Giá trị Thả xuống Khả dụng 3"
+
+msgid "Boolean Config"
+msgstr "Cấu hình Boolean"
+
+msgid "Button Config"
+msgstr "Cấu hình Nút bấm"
+
+msgid "Button Options Config"
+msgstr "Cấu hình Tùy chọn Nút bấm"
+
+msgid "Button Value"
+msgstr "Nút bấm"
+
+msgid "Button configuration that displays all current values."
+msgstr "Cấu hình nút bấm hiển thị toàn bộ giá trị hiện tại."
+
+msgid "Button configuration with multiple action buttons."
+msgstr "Cấu hình nút bấm với nhiều nút thao tác."
+
+msgid "Button notification displayed."
+msgstr "Đã hiển thị thông báo nút bấm."
+
+msgid "Configuration Demo Task"
+msgstr "Nhiệm vụ Mẫu Cấu hình"
+
+msgid "Configuration values displayed."
+msgstr "Đã hiển thị các giá trị cấu hình."
+
+msgid ""
+"Demonstrates every configuration widget for English to Chinese translation."
+msgstr "Minh họa tất cả các widget cấu hình cho bản dịch."
+
+msgid "Drop Down Config"
+msgstr "Cấu hình Hộp thả xuống"
+
+msgid "Drop Down Options Config"
+msgstr "Cấu hình Tùy chọn Hộp thả"
+
+msgid "Drop Down Value 1"
+msgstr "Giá trị Hộp thả 1"
+
+msgid "Drop Down Value 2"
+msgstr "Giá trị Hộp thả 2"
+
+msgid "Drop-down configuration with translated option values."
+msgstr "Cấu hình hộp thả xuống với các giá trị tùy chọn đã dịch."
+
+msgid "Dropdown option list restricted to available translated values."
+msgstr "Danh sách tùy chọn thả xuống giới hạn trong các giá trị đã dịch."
+
+msgid "Echo Key"
+msgstr "Phím Echo"
+
+msgid "F10"
+msgstr "F10"
+
+msgid "F11"
+msgstr "F11"
+
+msgid "F12"
+msgstr "F12"
+
+msgid "F9"
+msgstr "F9"
+
+msgid "False"
+msgstr "Tắt (False)"
+
+msgid "File Selector Config"
+msgstr "Cấu hình Chọn tệp"
+
+msgid "File selector configuration with an optional file filter."
+msgstr "Cấu hình chọn tệp với bộ lọc tệp tùy chọn."
+
+msgid "Float Config"
+msgstr "Cấu hình Số thực"
+
+msgid "Folder Selector Config"
+msgstr "Cấu hình Chọn thư mục"
+
+msgid "Folder selector configuration that stores the selected folder path."
+msgstr "Cấu hình chọn thư mục để lưu đường dẫn đã chọn."
+
+msgid "Game Hotkey Config"
+msgstr "Cấu hình Phím tắt trong game"
+
+msgid "In Game Hotkey for Skills"
+msgstr "Phím tắt kỹ năng trong game"
+
+msgid "Integer Config"
+msgstr "Cấu hình Số nguyên"
+
+msgid "Liberation Key"
+msgstr "Phím Giải phóng"
+
+msgid "List Config"
+msgstr "Cấu hình Danh sách"
+
+msgid "List Value 1"
+msgstr "Giá trị Danh sách 1"
+
+msgid "List Value 2"
+msgstr "Giá trị Danh sách 2"
+
+msgid "Multi Selection Config"
+msgstr "Cấu hình Chọn nhiều"
+
+msgid "Multi Selection Value 1"
+msgstr "Giá trị Chọn nhiều 1"
+
+msgid "Multi Selection Value 2"
+msgstr "Giá trị Chọn nhiều 2"
+
+msgid "Multi Selection Value 3"
+msgstr "Giá trị Chọn nhiều 3"
+
+msgid "Multi-line string configuration with a translated value."
+msgstr "Cấu hình văn bản nhiều dòng với giá trị đã dịch."
+
+msgid "OCR后端"
+msgstr "Backend OCR"
+
+msgid "OCR设置"
+msgstr "Cài đặt OCR"
+
+msgid "Open the shared global configuration example."
+msgstr "Mở ví dụ cấu hình toàn cục dùng chung."
+
+msgid "Resonance Key"
+msgstr "Phím Cộng hưởng"
+
+msgid "Select Demo File"
+msgstr "Chọn Tệp Mẫu"
+
+msgid "Select Demo Folder"
+msgstr "Chọn Thư mục Mẫu"
+
+msgid "Select one of the available drop-down values."
+msgstr "Vui lòng chọn một trong các giá trị thả xuống có sẵn."
+
+msgid "Select only available drop-down option values."
+msgstr "Chỉ chọn các giá trị tùy chọn thả xuống có sẵn."
+
+msgid "Select only available multi-selection values."
+msgstr "Chỉ chọn các giá trị chọn nhiều có sẵn."
+
+msgid "Show Config Values"
+msgstr "Xem giá trị cấu hình"
+
+msgid "Show Notification"
+msgstr "Hiển thị thông báo"
+
+msgid "Single-line string configuration with a translated value."
+msgstr "Cấu hình chuỗi một dòng với giá trị đã dịch."
+
+msgid "String Config"
+msgstr "Cấu hình Chuỗi"
+
+msgid "String Value"
+msgstr "Giá trị Chuỗi"
+
+msgid "Sub Boolean Config"
+msgstr "Cấu hình Boolean phụ"
+
+msgid "Sub Float Config"
+msgstr "Cấu hình Số thực phụ"
+
+msgid "Sub String Config"
+msgstr "Cấu hình Chuỗi phụ"
+
+msgid "Sub String Value"
+msgstr "Giá trị Chuỗi phụ"
+
+msgid "Text Edit Config"
+msgstr "Cấu hình Đoạn văn bản"
+
+msgid "Text Edit Value"
+msgstr "Giá trị Đoạn văn"
+
+msgid "Tool Key"
+msgstr "Phím Công cụ"
+
+msgid "True"
+msgstr "Bật (True)"
+
+msgid "export_config"
+msgstr "Xuất cấu hình"
+
+msgid "hottest_config"
+msgstr "Cấu hình phổ biến"
+
+msgid "import_config"
+msgstr "Nhập cấu hình"
+
+msgid "一般根据frame来判断是否需要运行"
+msgstr "Thường dựa vào khung hình (frame) để xác định có cần chạy hay không"
+
+msgid "一键日常"
+msgstr "Nhiệm vụ Ngày Một Chạm"
+
+msgid "不暂停"
+msgstr "Không tạm dừng"
+
+msgid "丢弃卡牌优先级"
+msgstr "Ưu tiên bỏ bài"
+
+msgid "主战员优先级"
+msgstr "Ưu tiên Đặc vụ"
+
+msgid "事件"
+msgstr "Sự kiện (Event)"
+
+msgid "从要推的图的最左边开始"
+msgstr "Bắt đầu từ ải ngoài cùng bên trái cần vượt"
+
+msgid "任务优先级"
+msgstr "Ưu tiên nhiệm vụ"
+
+msgid "休息"
+msgstr "Nghỉ ngơi (Rest)"
+
+msgid "优先使用金币治疗"
+msgstr "Ưu tiên dùng vàng hồi phục"
+
+msgid "优先移除基础牌"
+msgstr "Ưu tiên xóa thẻ bài cơ bản"
+
+msgid "体力本"
+msgstr "Ải tiêu hao Thể lực"
+
+msgid "保存配置"
+msgstr "Lưu cấu hình"
+
+msgid "保留大于多少TB的存档"
+msgstr "Giữ lại file lưu lớn hơn (TB)"
+
+msgid "保留存档"
+msgstr "Giữ lại file lưu"
+
+msgid "公共区"
+msgstr "Khu vực Công cộng"
+
+msgid "兵棋推演"
+msgstr "Cờ chiến Quân sự"
+
+msgid "军备解析"
+msgstr "Phân tích Quân bị"
+
+msgid "冲锋"
+msgstr "Xung kích (SMG & MG)"
+
+msgid "决策构象"
+msgstr "Cấu hình Quyết sách"
+
+msgid "几轮后停止(0为不停止)"
+msgstr "Dừng sau số vòng (0 là không dừng)"
+
+msgid "出战主战员优先级"
+msgstr "Ưu tiên Đặc vụ xuất chiến"
+
+msgid "出牌优先级"
+msgstr "Ưu tiên đánh bài"
+
+msgid "切换配置"
+msgstr "Đổi cấu hình"
+
+msgid "初始任务必须包含“移除2张”，否则重新开始；不能与“刷初始卡牌”同时使用。"
+msgstr ""
+"Nhiệm vụ khởi đầu bắt buộc phải có \"Xóa 2 lá\", nếu không sẽ làm lại từ "
+"đầu; không thể dùng đồng thời với \"Cày thẻ bài khởi đầu\"."
+
+msgid "刷初始卡牌"
+msgstr "Cày thẻ bài khởi đầu"
+
+msgid "刷存档主战员"
+msgstr "Đặc vụ cày file lưu"
+
+msgid "刷梦边"
+msgstr "Cày Biên giới Giấc mơ"
+
+msgid "刷空档"
+msgstr "Cày ô bài rỗng"
+
+msgid "刷钱本"
+msgstr "Ải cày Tiền (Gold)"
+
+msgid "半自动剧情模式"
+msgstr "Chế độ Cốt truyện Bán tự động"
+
+msgid "卡牌名称和描述无需完整填写，输入几个关键字即可，但顺序须与游戏原文一致。"
+msgstr ""
+"Tên và mô tả thẻ bài không cần nhập đầy đủ, chỉ cần nhập một vài từ khóa, "
+"nhưng thứ tự phải khớp với nguyên tác trong game."
+
+msgid "卡牌奖励优先级"
+msgstr "Ưu tiên phần thưởng thẻ bài"
+
+msgid "只打第一层"
+msgstr "Chỉ đánh tầng 1"
+
+msgid "国际服请设置为繁体中文"
+msgstr "Máy chủ Quốc tế (Global) vui lòng đặt là Phồn thể (繁体中文)"
+
+msgid "填写目标卡牌名称后反复刷新初始卡牌；不能与“刷空档”同时使用。"
+msgstr ""
+"Nhập tên thẻ bài mục tiêu để liên tục làm mới thẻ khởi đầu; không thể dùng "
+"đồng thời với \"Cày ô bài rỗng\"."
+
+msgid "复制卡牌列表"
+msgstr "Danh sách thẻ bài cần sao chép"
+
+msgid "多少信用点以上冥想"
+msgstr "Thiền định khi có trên (Điểm tín dụng)"
+
+msgid "大月卡"
+msgstr "Thẻ Tháng Cao Cấp"
+
+msgid "存储数据保存上限大于多少"
+msgstr "Giới hạn lưu trữ dữ liệu lớn hơn"
+
+msgid "导入配置码"
+msgstr "Nhập mã cấu hình"
+
+msgid "导出配置码"
+msgstr "Xuất mã cấu hình"
+
+msgid "小怪"
+msgstr "Quái thường (Normal)"
+
+msgid "尘烟"
+msgstr "Bụi khói"
+
+msgid ""
+"开启后每5分钟自动上传匿名的配置信息和胜率，帮助统计热门配置。\n"
+"不上传任何个人信息、游戏账号、截图、IP地址等隐私数据。\n"
+"仅上传配置内容和胜率统计数据。"
+msgstr ""
+"Khi bật, cứ sau mỗi 5 phút sẽ tự động tải lên thông tin cấu hình ẩn danh và tỷ lệ thắng để hỗ trợ thống kê cấu hình phổ biến.\n"
+"Tuyệt đối không tải lên thông tin cá nhân, tài khoản game, ảnh chụp màn hình, địa chỉ IP hay bất kỳ dữ liệu riêng tư nào.\n"
+"Chỉ tải lên nội dung thiết lập cấu hình và số liệu thống kê tỷ lệ thắng."
+
+msgid "手枪"
+msgstr "Súng ngắn (HG)"
+
+msgid "拉黑主战员"
+msgstr "Chặn Đặc vụ"
+
+msgid "拉黑任务"
+msgstr "Chặn nhiệm vụ"
+
+msgid "指定面具卡牌"
+msgstr "Chỉ định thẻ Mặt nạ"
+
+msgid "推图"
+msgstr "Vượt ải cốt truyện"
+
+msgid "收菜"
+msgstr "Thu hoạch tài nguyên"
+
+msgid "日文"
+msgstr "Tiếng Nhật"
+
+msgid "是否上传配置"
+msgstr "Tự động tải lên cấu hình"
+
+msgid "梦边"
+msgstr "Biên giới Giấc mơ"
+
+msgid "治疗崩溃"
+msgstr "Trị liệu trạng thái Sụp đổ"
+
+msgid "活动情报补给"
+msgstr "Tiếp tế Tình báo Sự kiện"
+
+msgid "活动自律"
+msgstr "Ủy thác Sự kiện"
+
+msgid "测试trigger"
+msgstr "Kiểm tra Kích hoạt"
+
+msgid "深度搜索"
+msgstr "Tìm kiếm Chuyên sâu"
+
+msgid "游戏语言"
+msgstr "Ngôn ngữ game"
+
+msgid "热门配置"
+msgstr "Cấu hình phổ biến"
+
+msgid "狙击"
+msgstr "Bắn tỉa (RF & BLD)"
+
+msgid "班组"
+msgstr "Tiểu đội"
+
+msgid "生命值大于多少优先闪光(百分比)"
+msgstr "Máu trên bao nhiêu % thì ưu tiên Flash"
+
+msgid "移除卡牌列表"
+msgstr "Danh sách thẻ bài cần xóa"
+
+msgid "突击"
+msgstr "Đột kích (AR & SG)"
+
+msgid "竞技场"
+msgstr "Đấu trường (Arena)"
+
+msgid "第几层boss前自动暂停"
+msgstr "Tự động tạm dừng trước Boss tầng"
+
+msgid "简体中文"
+msgstr "Giản thể (简体中文)"
+
+msgid "精英"
+msgstr "Tinh anh (Elite)"
+
+msgid "繁体中文"
+msgstr "Phồn thể (繁体中文)"
+
+msgid "自动"
+msgstr "Tự động"
+
+msgid "自动出击模式"
+msgstr "Tự động Xuất kích"
+
+msgid "自动刷体力"
+msgstr "Tự động cày Thể lực"
+
+msgid "自动卡厄思模式"
+msgstr "Tự động Khiêu chiến Chaos"
+
+msgid "自动模式仅在内存不少于12GB的Intel设备上使用OpenVINO，其他设备使用ONNX Runtime。修改后重启程序生效。"
+msgstr ""
+"Chế độ tự động chỉ kích hoạt OpenVINO trên thiết bị Intel có RAM từ 12GB trở"
+" lên, các thiết bị khác sẽ dùng ONNX Runtime. Khởi động lại ứng dụng để cài "
+"đặt có hiệu lực."
+
+msgid "英文"
+msgstr "Tiếng Anh"
+
+msgid "获得卡牌优先级"
+msgstr "Ưu tiên nhận thẻ bài"
+
+msgid "装备1号位优先级"
+msgstr "Ưu tiên trang bị ô 1"
+
+msgid "装备2号位优先级"
+msgstr "Ưu tiên trang bị ô 2"
+
+msgid "装备3号位优先级"
+msgstr "Ưu tiên trang bị ô 3"
+
+msgid "触发器会不断调用run方法"
+msgstr "Trình kích hoạt liên tục gọi hàm run"
+
+msgid "购买免费礼包"
+msgstr "Nhận gói quà miễn phí"
+
+msgid "路线优先级"
+msgstr "Ưu tiên lộ trình"
+
+msgid "跳过非优先级卡牌"
+msgstr "Bỏ qua thẻ bài không ưu tiên"
+
+msgid "进入商店"
+msgstr "Vào cửa hàng"
+
+msgid "选择游戏客户端语言，影响OCR文本匹配"
+msgstr "Chọn ngôn ngữ client game, ảnh hưởng đến độ chuẩn xác nhận diện OCR"
+
+msgid "邮件"
+msgstr "Hộp thư"
+
+msgid "配置上传"
+msgstr "Đồng bộ cấu hình"
+
+msgid "配置操作"
+msgstr "Thao tác cấu hình"
+
+msgid "闪光优先级"
+msgstr "Ưu tiên thẻ Flash"
+
+msgid "闪光卡牌列表"
+msgstr "Danh sách thẻ bài Flash"
+
+msgid "需要冥想的卡牌"
+msgstr "Thẻ bài cần thiền định"
+
+msgid "面具卡牌刻印"
+msgstr "Khắc ấn thẻ Mặt nạ"
+
+msgid "领任务"
+msgstr "Nhận nhiệm vụ"
+
+msgid "领取奖励"
+msgstr "Nhận phần thưởng"
+
+msgid "领取奖励(只使用验证卡)"
+msgstr "Nhận phần thưởng (chỉ dùng thẻ xác thực)"
+
+msgid "首层刷特定闪光"
+msgstr "Tầng 1 cày thẻ Flash chỉ định"
+
+msgid "默认刷闪光优先级第一张，可刷神闪，第一层没刷出自动逃脱"
+msgstr ""
+"Mặc định cày thẻ đầu tiên trong danh sách ưu tiên Flash, có thể cày Thần "
+"Flash; nếu tầng 1 không ra sẽ tự động đào tẩu."
+
+msgid "从右往左出牌"
+msgstr "Đánh bài từ phải sang trái"

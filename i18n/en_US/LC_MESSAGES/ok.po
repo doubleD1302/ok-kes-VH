@@ -87,7 +87,8 @@ msgstr "Claim Missions"
 msgid "Configuration Demo Task"
 msgstr ""
 
-msgid "Demonstrates every configuration widget for English to Chinese translation."
+msgid ""
+"Demonstrates every configuration widget for English to Chinese translation."
 msgstr ""
 
 msgid "Drop Down Config"
@@ -268,3 +269,267 @@ msgid ""
 msgstr ""
 "1. Enable auto battle and auto story in the game.\n"
 "2. International server players should set Game Language to Traditional Chinese in this mode."
+
+msgid ""
+"1.剧情内战斗关卡可手动开启出击模式调用自动战斗功能。\n"
+"2. 遇到卡厄思关卡请手动打开卡厄思模式。\n"
+"3. 剧情战斗关卡队伍需手动配置"
+msgstr ""
+
+msgid "Echo Key"
+msgstr ""
+
+msgid "F10"
+msgstr ""
+
+msgid "F11"
+msgstr ""
+
+msgid "F12"
+msgstr ""
+
+msgid "F9"
+msgstr ""
+
+msgid "In Game Hotkey for Skills"
+msgstr ""
+
+msgid "Liberation Key"
+msgstr ""
+
+msgid "OCR后端"
+msgstr ""
+
+msgid "OCR设置"
+msgstr ""
+
+msgid "Resonance Key"
+msgstr ""
+
+msgid "Tool Key"
+msgstr ""
+
+msgid "export_config"
+msgstr ""
+
+msgid "hottest_config"
+msgstr ""
+
+msgid "import_config"
+msgstr ""
+
+msgid "一般根据frame来判断是否需要运行"
+msgstr ""
+
+msgid "不暂停"
+msgstr ""
+
+msgid "丢弃卡牌优先级"
+msgstr ""
+
+msgid "主战员优先级"
+msgstr ""
+
+msgid "事件"
+msgstr ""
+
+msgid "任务优先级"
+msgstr ""
+
+msgid "休息"
+msgstr ""
+
+msgid "优先使用金币治疗"
+msgstr ""
+
+msgid "优先移除基础牌"
+msgstr ""
+
+msgid "保存配置"
+msgstr ""
+
+msgid "保留大于多少TB的存档"
+msgstr ""
+
+msgid "保留存档"
+msgstr ""
+
+msgid "几轮后停止(0为不停止)"
+msgstr ""
+
+msgid "出战主战员优先级"
+msgstr ""
+
+msgid "出牌优先级"
+msgstr ""
+
+msgid "切换配置"
+msgstr ""
+
+msgid "初始任务必须包含“移除2张”，否则重新开始；不能与“刷初始卡牌”同时使用。"
+msgstr ""
+
+msgid "刷初始卡牌"
+msgstr ""
+
+msgid "刷存档主战员"
+msgstr ""
+
+msgid "刷梦边"
+msgstr ""
+
+msgid "刷空档"
+msgstr ""
+
+msgid "半自动剧情模式"
+msgstr ""
+
+msgid "卡牌名称和描述无需完整填写，输入几个关键字即可，但顺序须与游戏原文一致。"
+msgstr ""
+
+msgid "卡牌奖励优先级"
+msgstr ""
+
+msgid "只打第一层"
+msgstr ""
+
+msgid "填写目标卡牌名称后反复刷新初始卡牌；不能与“刷空档”同时使用。"
+msgstr ""
+
+msgid "复制卡牌列表"
+msgstr ""
+
+msgid "多少信用点以上冥想"
+msgstr ""
+
+msgid "存储数据保存上限大于多少"
+msgstr ""
+
+msgid "导入配置码"
+msgstr ""
+
+msgid "导出配置码"
+msgstr ""
+
+msgid "小怪"
+msgstr ""
+
+msgid ""
+"开启后每5分钟自动上传匿名的配置信息和胜率，帮助统计热门配置。\n"
+"不上传任何个人信息、游戏账号、截图、IP地址等隐私数据。\n"
+"仅上传配置内容和胜率统计数据。"
+msgstr ""
+
+msgid "拉黑主战员"
+msgstr ""
+
+msgid "拉黑任务"
+msgstr ""
+
+msgid "指定面具卡牌"
+msgstr ""
+
+msgid "日文"
+msgstr ""
+
+msgid "是否上传配置"
+msgstr ""
+
+msgid "梦边"
+msgstr ""
+
+msgid "治疗崩溃"
+msgstr ""
+
+msgid "测试trigger"
+msgstr ""
+
+msgid "热门配置"
+msgstr ""
+
+msgid "生命值大于多少优先闪光(百分比)"
+msgstr ""
+
+msgid "移除卡牌列表"
+msgstr ""
+
+msgid "第几层boss前自动暂停"
+msgstr ""
+
+msgid "精英"
+msgstr ""
+
+msgid "自动"
+msgstr ""
+
+msgid "自动出击模式"
+msgstr ""
+
+msgid "自动卡厄思模式"
+msgstr ""
+
+msgid "自动模式仅在内存不少于12GB的Intel设备上使用OpenVINO，其他设备使用ONNX Runtime。修改后重启程序生效。"
+msgstr ""
+
+msgid "英文"
+msgstr ""
+
+msgid "获得卡牌优先级"
+msgstr ""
+
+msgid "装备1号位优先级"
+msgstr ""
+
+msgid "装备2号位优先级"
+msgstr ""
+
+msgid "装备3号位优先级"
+msgstr ""
+
+msgid "触发器会不断调用run方法"
+msgstr ""
+
+msgid "路线优先级"
+msgstr ""
+
+msgid "跳过非优先级卡牌"
+msgstr ""
+
+msgid "进入商店"
+msgstr ""
+
+msgid "选择游戏客户端语言，影响OCR文本匹配"
+msgstr ""
+
+msgid "配置上传"
+msgstr ""
+
+msgid "配置操作"
+msgstr ""
+
+msgid "闪光优先级"
+msgstr ""
+
+msgid "闪光卡牌列表"
+msgstr ""
+
+msgid "需要冥想的卡牌"
+msgstr ""
+
+msgid "面具卡牌刻印"
+msgstr ""
+
+msgid "领取奖励"
+msgstr ""
+
+msgid "领取奖励(只使用验证卡)"
+msgstr ""
+
+msgid "首层刷特定闪光"
+msgstr ""
+
+msgid "默认刷闪光优先级第一张，可刷神闪，第一层没刷出自动逃脱"
+msgstr ""
+
+msgid "从右往左出牌"
+msgstr "Play Cards From Right to Left"

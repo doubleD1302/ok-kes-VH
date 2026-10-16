@@ -21,8 +21,11 @@ class SortieMode(TriggerTask):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.name = "自动出击模式"
-        self.description = "1. 自动战斗依赖按键识别，请在游戏设置中打开快捷键显示，提升出牌准确率。\n2. 国际服玩家请将本模式配置中的\"游戏语言\"设置为繁体中文。"
-        self.instructions = """<a href="https://github.com/ok-oldking/ok-py">ok-py</a>"""
+        self.instructions = """<b>Chế độ Tự động Xuất kích (Auto Sortie):</b><br><br>
+1. <b>Cách bật:</b> Vào giao diện có nút [Vào ải] của chế độ Xuất kích (hoặc đã bước vào trong ải), sau đó gạt công tắc BẬT.<br>
+2. <b>Cài đặt bắt buộc:</b> Bật [Hiển thị phím tắt] trong cài đặt game PC để bot nhận diện phím đánh bài.<br>
+3. <b>Mẹo cấu hình:</b> Nhấp nút [Cấu hình phổ biến] bên dưới để tải bộ thứ tự ra bài của cao thủ tỷ lệ thắng 95-100%.<br>
+4. <b>Server Quốc tế (Global):</b> Đổi mục [Ngôn ngữ game] thành Phồn thể (繁体中文)."""
         self.trigger_interval = 1
         self.all_texts = []
         self.default_config["_enabled"] = False

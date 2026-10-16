@@ -87,7 +87,8 @@ msgstr ""
 msgid "Configuration Demo Task"
 msgstr "配置演示任务"
 
-msgid "Demonstrates every configuration widget for English to Chinese translation."
+msgid ""
+"Demonstrates every configuration widget for English to Chinese translation."
 msgstr "演示英译中任务的全部配置控件。"
 
 msgid "Drop Down Config"
@@ -429,3 +430,108 @@ msgstr ""
 
 msgid "国际服请设置为繁体中文"
 msgstr ""
+
+msgid "OCR后端"
+msgstr "OCR后端"
+
+msgid "OCR设置"
+msgstr "OCR设置"
+
+msgid "一般根据frame来判断是否需要运行"
+msgstr "一般根据frame来判断是否需要运行"
+
+msgid "不暂停"
+msgstr "不暂停"
+
+msgid "事件"
+msgstr "事件"
+
+msgid "休息"
+msgstr "休息"
+
+msgid "保存配置"
+msgstr "保存配置"
+
+msgid "保留大于多少TB的存档"
+msgstr "保留大于多少TB的存档"
+
+msgid "几轮后停止(0为不停止)"
+msgstr "几轮后停止(0为不停止)"
+
+msgid "切换配置"
+msgstr "切换配置"
+
+msgid "初始任务必须包含“移除2张”，否则重新开始；不能与“刷初始卡牌”同时使用。"
+msgstr "初始任务必须包含“移除2张”，否则重新开始；不能与“刷初始卡牌”同时使用。"
+
+msgid "刷初始卡牌"
+msgstr "刷初始卡牌"
+
+msgid "刷存档主战员"
+msgstr "刷存档主战员"
+
+msgid "刷空档"
+msgstr "刷空档"
+
+msgid "卡牌名称和描述无需完整填写，输入几个关键字即可，但顺序须与游戏原文一致。"
+msgstr "卡牌名称和描述无需完整填写，输入几个关键字即可，但顺序须与游戏原文一致。"
+
+msgid "填写目标卡牌名称后反复刷新初始卡牌；不能与“刷空档”同时使用。"
+msgstr "填写目标卡牌名称后反复刷新初始卡牌；不能与“刷空档”同时使用。"
+
+msgid "多少信用点以上冥想"
+msgstr "多少信用点以上冥想"
+
+msgid "存储数据保存上限大于多少"
+msgstr "存储数据保存上限大于多少"
+
+msgid "导入配置码"
+msgstr "导入配置码"
+
+msgid "导出配置码"
+msgstr "导出配置码"
+
+msgid "小怪"
+msgstr "小怪"
+
+msgid "拉黑任务"
+msgstr "拉黑任务"
+
+msgid "第几层boss前自动暂停"
+msgstr "第几层boss前自动暂停"
+
+msgid "精英"
+msgstr "精英"
+
+msgid "自动"
+msgstr "自动"
+
+msgid "自动模式仅在内存不少于12GB的Intel设备上使用OpenVINO，其他设备使用ONNX Runtime。修改后重启程序生效。"
+msgstr "自动模式仅在内存不少于12GB的Intel设备上使用OpenVINO，其他设备使用ONNX Runtime。修改后重启程序生效。"
+
+msgid "装备1号位优先级"
+msgstr "装备1号位优先级"
+
+msgid "装备2号位优先级"
+msgstr "装备2号位优先级"
+
+msgid "装备3号位优先级"
+msgstr "装备3号位优先级"
+
+msgid "触发器会不断调用run方法"
+msgstr "触发器会不断调用run方法"
+
+msgid "配置操作"
+msgstr "配置操作"
+
+msgid "需要冥想的卡牌"
+msgstr "需要冥想的卡牌"
+
+msgid "首层刷特定闪光"
+msgstr "首层刷特定闪光"
+
+msgid "默认刷闪光优先级第一张，可刷神闪，第一层没刷出自动逃脱"
+msgstr "默认刷闪光优先级第一张，可刷神闪，第一层没刷出自动逃脱"
+
+msgid "从右往左出牌"
+msgstr "从右往左出牌"

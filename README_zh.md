@@ -1,0 +1,159 @@
+<div align="center">
+  <h1 align="center">
+    <img src="icons/icon.png" width="200" alt="ok-kes logo"/>
+    <br/>
+    ok-kes
+  </h1> 
+  
+  <p>
+    一个基于图像识别的卡厄思梦境自动化辅助工具，支持后台运行，基于 <a href="https://github.com/ok-oldking/ok-script">ok-script</a> 开发。
+    <br />
+    An image-recognition-based automation tool for Chaos Zero Nightmare (卡厄思梦境), with background mode support, developed with <a href="https://github.com/ok-oldking/ok-script">ok-script</a>.
+  </p>
+  
+  <p><i>通过 Windows 接口模拟用户进行操作，无内存读取、无文件修改</i></p>
+  <p><b>✅ 支持国际服繁体中文、国服 PC 客户端及安卓模拟器</b></p>
+</div>
+
+<!-- Badges -->
+<div align="center">
+  
+![平台](https://img.shields.io/badge/platform-Windows-blue)
+[![GitHub release](https://img.shields.io/github/v/release/baoxin1100/ok-kes)](https://github.com/baoxin1100/ok-kes/releases)
+
+</div>
+
+### [Tiếng Việt](README.md) | [English Readme](README_en.md) | 中文说明
+
+> 📖 **第一次使用？请先阅读：[完整使用文档](docs/zh-CN/usage-guide.md)**
+
+---
+
+## ⚠️ 免责声明
+
+本软件为外部辅助工具，旨在自动化《卡厄思梦境》的部分游戏流程。它完全通过模拟常规用户界面与游戏交互，遵循相关法律法规。本项目旨在简化用户的重复性操作，不会破坏游戏平衡或提供不公平优势，也绝不会修改任何游戏文件或数据。
+
+本软件开源、免费，仅供个人学习与交流使用，请勿用于任何商业或营利性目的。开发者团队拥有本项目的最终解释权。因使用本软件而产生的任何问题，均与本项目及开发者无关。
+
+**使用本软件即表示您已阅读、理解并同意以上声明，并自愿承担一切潜在风险。**
+
+## 🚀 快速开始
+
+1. **下载安装包**：前往 [GitHub Releases](https://github.com/baoxin1100/ok-kes/releases) 下载最新的安装程序。
+2. **安装并运行**：安装程序，启动后会自动更新到最新版本；启动游戏并连接游戏窗口，然后选择需要的功能运行。
+
+## ✨ 主要功能
+
+<img src="docs/images/image_1.png" alt="功能界面" />
+
+### 自动出击模式
+- 🎮 自动战斗：基于按键识别的智能出牌，支持玩家配置出牌优先级
+- 🃏 自动选牌：自动获取、移除、复制、闪光卡牌
+- ⚔️ 主战员选择：自动按优先级选择出站主战员
+- 🛣️ 路线选择：智能识别节点类型，按优先级自动前进
+- 🏪 商店处理：自动进入德朗商店移除卡牌
+- 💊 以太补充检测：检测体力不足时自动退出
+- 支持自定义卡牌优先级、移除/复制/闪光列表等配置
+
+### 自动卡厄思模式
+- 🃏 自动卡牌管理：移除、复制、闪光、赋予闪光、转换等
+- 🛣️ 路线选择：自动识别休息/事件/boss/小怪节点
+- 🏥 精神崩溃治疗：自动前往创伤中心治疗
+- 📦 存储数据处理：自动删除存档（可配置保留）
+- 🏪 商店处理：自动进入德朗商店
+- 🌀 零式系统支持：自动处理法典搜索
+- 更多功能持续开发中...
+
+### 半自动剧情模式
+- 💬 自动对话：跳过剧情对话
+- ⚠️ 遇到战斗或卡厄思关卡时可手动切换对应模式
+
+### 配置导入导出
+- 📤 **导出配置**：一键将当前模式配置编码为文本并复制到剪贴板，可分享给他人
+- 📥 **导入配置**：粘贴他人分享的配置编码即可应用配置，支持不同版本间互相导入
+
+### 配置同步与热门配置 (v1.3.5+)
+- 📡 **自动上传配置**：每5分钟自动上传匿名的配置信息和胜率到云端，帮助统计热门配置
+- 🌟 **热门配置**：在卡厄思模式/出击模式的配置页中点击"热门配置"按钮
+  - 浏览其他高胜率玩家分享的配置（支持按胜率或使用人数排序）
+  - 一键应用热门配置到本地
+  - 需开启配置上传功能才能使用（防止只下载不贡献）
+- 🔒 **隐私说明**：不上传任何个人信息、游戏账号、截图、IP地址
+
+### 通用功能
+- 🖥️ **高分辨率支持**: 支持 1920x1080 / 1600x900 / 1280x720 等 16:9 分辨率
+- 🔄 **后台模式**: 支持游戏窗口最小化或被遮挡时在后台运行
+- 🌏 **多语言游戏支持**: 支持简体中文、繁体中文客户端（在自动模式配置中设置对应的“游戏语言”）
+
+## 🔧 使用说明
+
+1. **国际服玩家必读**：请在所使用的自动模式配置中将“游戏语言”设置为繁体中文
+2. **自动战斗**：依赖按键识别，请在游戏设置中打开快捷键显示，提升出牌准确率
+3. **卡厄思模式**：请主动打开游戏内自动战斗和自动剧情功能
+4. **剧情模式**：战斗关卡可手动开启出击模式调用自动战斗功能；遇到卡厄思关卡请手动打开卡厄思模式；战斗关卡队伍需手动配置
+
+## 🔧 疑难解答 (Troubleshooting)
+
+如果遇到问题，请在提问前按以下步骤逐一排查：
+
+1. **杀毒软件**：将软件所在目录添加到杀毒软件（包括 Windows Defender）的**信任区或白名单**中，以防文件被误删或拦截。
+2. **显示设置**：
+   * 关闭所有显卡滤镜（如 NVIDIA Game Filter）和锐化功能。
+   * 使用游戏默认的亮度设置。
+   * 关闭任何在游戏画面上显示信息的叠加层。
+3. **游戏分辨率**：请确保游戏分辨率设置为 16:9 比例。
+4. **软件版本**：检查并确保您使用的是最新版本。
+5. **寻求帮助**：如果以上步骤都无法解决您的问题，请通过社区渠道提交详细的错误报告。
+
+---
+
+## 💖 赞赏支持
+
+如果喜欢这个工具，可以赞赏up主持续开发~感谢
+
+<p align="center">
+  <img src="docs/images/wechat_reward_code.png" alt="微信赞赏码" width="300">
+  <img src="docs/images/alipay_reward_code.png" alt="支付宝赞赏码" width="300">
+</p>
+
+---
+
+## 💻 开发者专区
+
+### 从源码运行 (Python)
+
+```bash
+# 安装或更新依赖
+pip install -r requirements.txt --upgrade
+
+# 运行 Release 版本
+python main.py
+
+# 运行 Debug 版本
+python main_debug.py
+```
+
+## 💬 加入我们
+
+- **QQ 交流群**: `1040800032` (入群答案: `烟火焚`)
+- **QQ 频道**: [点击加入](https://pd.qq.com/s/eopggnxcu)
+- **ok-kes 官网**: [https://ok-script.com/ok-kes](https://ok-script.com/ok-kes)
+
+本项目基于 [ok-script](https://github.com/ok-oldking/ok-script) 框架开发，简单易维护。欢迎有兴趣的开发者使用 [ok-script](https://github.com/ok-oldking/ok-script) 开发您自己的自动化项目。
+
+## 🔗 使用ok-script的项目：
+
+* 卡厄思梦境 [https://github.com/baoxin1100/ok-kes](https://github.com/baoxin1100/ok-kes)
+* 鸣潮 [https://github.com/ok-oldking/ok-wuthering-wave](https://github.com/ok-oldking/ok-wuthering-waves)
+* 少前2 [https://github.com/ok-oldking/ok-gf2](https://github.com/ok-oldking/ok-gf2)
+* 星痕共鸣 [https://github.com/Sanheiii/ok-star-resonance](https://github.com/Sanheiii/ok-star-resonance)
+* 二重螺旋 [https://github.com/BnanZ0/ok-duet-night-abyss](https://github.com/BnanZ0/ok-duet-night-abyss)
+* 明日方舟：终末地 [https://github.com/AliceJump/ok-end-field](https://github.com/AliceJump/ok-end-field)
+* 异环 [https://github.com/BnanZ0/ok-nte](https://github.com/BnanZ0/ok-nte)
+* 阴阳师 [https://ok-script.com/ok-onmyoji](https://ok-script.com/ok-onmyoji)
+
+## ❤️ 致谢
+
+* [ok-script](https://github.com/ok-oldking/ok-script)
+* [OnnxOCR](https://github.com/ok-oldking/OnnxOCR)
+* [PyQt-Fluent-Widgets](https://github.com/zhiyiYo/PyQt-Fluent-Widgets)

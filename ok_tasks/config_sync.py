@@ -90,20 +90,20 @@ def _should_upload(task: TriggerTask) -> bool:
         enabled = True
     win_rate = _get_win_rate(task)
     if win_rate < 0:
-        task.log_debug(f"[配置同步] 数据不足{MIN_ROUNDS}场，跳过上传")
+        task.log_debug(f"[Đồng bộ cấu hình] Chưa đủ {MIN_ROUNDS} trận, bỏ qua tải lên")
         return False
     return bool(enabled)
 
 
 def upload_config(task: TriggerTask, mode: str) -> bool:
-    """上传当前配置到 Supabase。
+    """Tải cấu hình hiện tại lên Supabase.
     
     Args:
-        task: TriggerTask 实例
-        mode: "chaos" 或 "sortie"
+        task: Đối tượng TriggerTask
+        mode: "chaos" hoặc "sortie"
     
     Returns:
-        bool: 是否上传成功
+        bool: Trạng thái tải lên thành công hay không
     """
     if not _should_upload(task):
         return False
@@ -166,13 +166,13 @@ def upload_config(task: TriggerTask, mode: str) -> bool:
             timeout=10,
         )
         if resp.status_code in (200, 201, 204):
-            task.log_debug(f"[配置同步] 上传成功 (mode={mode}, win_rate={win_rate:.1%})")
+            task.log_debug(f"[Đồng bộ cấu hình] Tải lên thành công (mode={mode}, win_rate={win_rate:.1%})")
             return True
         else:
-            task.log_info(f"[配置同步] 上传失败: HTTP {resp.status_code} {resp.text[:200]}")
+            task.log_info(f"[Đồng bộ cấu hình] Tải lên thất bại: HTTP {resp.status_code} {resp.text[:200]}")
             return False
     except requests.RequestException as e:
-        task.log_info(f"[配置同步] 上传异常: {e}")
+        task.log_info(f"[Đồng bộ cấu hình] Lỗi mạng khi tải lên: {e}")
         return False
 
 
@@ -283,7 +283,7 @@ def fetch_popular_configs(
 
 
 def check_upload_disabled_and_warn(task: TriggerTask) -> bool:
-    """检查配置上传是否已关闭，若关闭则弹窗提示并返回 True。"""
+    """Kiểm tra tính năng tải lên cấu hình đã bật chưa, nếu tắt thì hiện thông báo và trả về True."""
     try:
         lang_config = task.executor.global_config.get_config('配置上传')
         upload_enabled = lang_config.get('是否上传配置', True)
@@ -292,16 +292,16 @@ def check_upload_disabled_and_warn(task: TriggerTask) -> bool:
     if not upload_enabled:
         from PySide6.QtWidgets import QMessageBox
         QMessageBox.warning(
-            None, "热门配置不可用",
-            "请先在左下角设置页中开启「配置上传」功能，才能使用热门配置。\n\n"
-            "开启后，您可以浏览和下载其他高胜率玩家分享的配置。"
+            None, "Cấu hình phổ biến không khả dụng",
+            "Vui lòng bật tính năng \"Tải lên cấu hình\" trong phần Cài đặt ở góc dưới bên trái để sử dụng Cấu hình phổ biến.\n\n"
+            "Sau khi bật, bạn có thể xem và tải về các cấu hình được chia sẻ từ người chơi có tỷ lệ thắng cao."
         )
         return True
     return False
 
 
 def check_upload_if_needed(task: TriggerTask, mode: str):
-    """每 UPLOAD_INTERVAL 秒自动上传一次配置。"""
+    """Tự động tải lên cấu hình định kỳ mỗi UPLOAD_INTERVAL giây."""
     import time
     now = time.time()
     if now - getattr(task, '_last_upload_time', 0) >= UPLOAD_INTERVAL:
@@ -310,11 +310,11 @@ def check_upload_if_needed(task: TriggerTask, mode: str):
 
 
 def show_hot_configs_dialog(task: TriggerTask, mode: str):
-    """弹出热门配置选择对话框。
+    """Hiển thị hộp thoại chọn cấu hình phổ biến.
     
     Args:
-        task: TriggerTask 实例
-        mode: "chaos" 或 "sortie"
+        task: Đối tượng TriggerTask
+        mode: "chaos" hoặc "sortie"
     """
     from PySide6.QtWidgets import (
         QDialog, QVBoxLayout, QHBoxLayout, QLabel, QListWidget,
@@ -325,35 +325,35 @@ def show_hot_configs_dialog(task: TriggerTask, mode: str):
     if check_upload_disabled_and_warn(task):
         return
 
-    mode_name = "卡厄思模式" if mode == "chaos" else "出击模式"
+    mode_name = "Chế độ Khiêu chiến Chaos" if mode == "chaos" else "Chế độ Xuất kích"
     dialog = QDialog()
-    dialog.setWindowTitle(f"热门配置 - {mode_name}")
+    dialog.setWindowTitle(f"Cấu hình phổ biến - {mode_name}")
     dialog.resize(650, 500)
 
     layout = QVBoxLayout(dialog)
 
     # 筛选行：排序方式 + 出战主战员筛选
     filter_layout = QHBoxLayout()
-    sort_label = QLabel("排序方式：")
+    sort_label = QLabel("Sắp xếp theo:")
     sort_combo = QComboBox()
-    sort_combo.addItem("按胜率降序", "winrate")
-    sort_combo.addItem("按使用人数降序", "users")
+    sort_combo.addItem("Tỷ lệ thắng giảm dần", "winrate")
+    sort_combo.addItem("Số người dùng giảm dần", "users")
     filter_layout.addWidget(sort_label)
     filter_layout.addWidget(sort_combo)
 
     # 语言筛选
-    lang_filter_label = QLabel("语言：")
+    lang_filter_label = QLabel("Ngôn ngữ:")
     lang_filter_combo = QComboBox()
-    lang_filter_combo.addItem("不限", "")
+    lang_filter_combo.addItem("Tất cả", "")
     filter_layout.addWidget(lang_filter_label)
     filter_layout.addWidget(lang_filter_combo)
 
     # 成员筛选：出击模式筛选首选主战员，卡厄思模式筛选刷存档主战员
     member_filter_label = QLabel(
-        "出战主战员：" if mode == "sortie" else "刷存档主战员："
+        "Đặc vụ xuất chiến:" if mode == "sortie" else "Đặc vụ cày file lưu:"
     )
     member_filter_combo = QComboBox()
-    member_filter_combo.addItem("不限", "")
+    member_filter_combo.addItem("Tất cả", "")
     filter_layout.addWidget(member_filter_label)
     filter_layout.addWidget(member_filter_combo)
 
@@ -361,7 +361,7 @@ def show_hot_configs_dialog(task: TriggerTask, mode: str):
     layout.addLayout(filter_layout)
 
     # 加载提示
-    loading_label = QLabel("正在加载热门配置，请稍候...")
+    loading_label = QLabel("Đang tải danh sách cấu hình phổ biến, vui lòng chờ...")
     loading_label.setStyleSheet("color: gray; padding: 20px;")
     loading_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
     layout.addWidget(loading_label)
@@ -373,10 +373,10 @@ def show_hot_configs_dialog(task: TriggerTask, mode: str):
 
     # 按钮
     btn_layout = QHBoxLayout()
-    refresh_btn = QPushButton("刷新")
-    apply_btn = QPushButton("应用所选配置")
+    refresh_btn = QPushButton("Làm mới")
+    apply_btn = QPushButton("Áp dụng cấu hình đã chọn")
     apply_btn.setEnabled(False)
-    cancel_btn = QPushButton("取消")
+    cancel_btn = QPushButton("Hủy")
     btn_layout.addWidget(refresh_btn)
     btn_layout.addStretch()
     btn_layout.addWidget(apply_btn)
@@ -394,7 +394,7 @@ def show_hot_configs_dialog(task: TriggerTask, mode: str):
         current_lang = lang_filter_combo.currentData() or ""
         lang_filter_combo.blockSignals(True)
         lang_filter_combo.clear()
-        lang_filter_combo.addItem("不限", "")
+        lang_filter_combo.addItem("Tất cả", "")
         langs = sorted(set(r.get("game_lang", "简体中文") for r in all_results if r.get("game_lang")))
         for lang in langs:
             lang_filter_combo.addItem(lang, lang)
@@ -407,7 +407,7 @@ def show_hot_configs_dialog(task: TriggerTask, mode: str):
             current_member = member_filter_combo.currentData() or ""
             member_filter_combo.blockSignals(True)
             member_filter_combo.clear()
-            member_filter_combo.addItem("不限", "")
+            member_filter_combo.addItem("Tất cả", "")
             members = sorted(set(r.get("first_member", "") for r in all_results if r.get("first_member")))
             for m in members:
                 member_filter_combo.addItem(m, m)
@@ -431,7 +431,7 @@ def show_hot_configs_dialog(task: TriggerTask, mode: str):
         config_list.clear()
         loading_label.setVisible(False)
         if not filtered:
-            item = QListWidgetItem("暂无热门配置数据（至少需要5场有效数据才会被统计）")
+            item = QListWidgetItem("Chưa có dữ liệu cấu hình phổ biến (cần ít nhất 5 trận hợp lệ để thống kê)")
             config_list.addItem(item)
             return
         for i, r in enumerate(filtered[:20], 1):
@@ -441,10 +441,10 @@ def show_hot_configs_dialog(task: TriggerTask, mode: str):
             gl = r.get("game_lang", "简体中文")
             fm = r.get("first_member", "")
             if fm:
-                member_label = "主战员" if mode == "sortie" else "刷存档主战员"
-                text = f"#{i}  胜率: {wr:.0%}  使用人数: {uc}  {member_label}: {fm}  语言: {gl}  版本: {ver}"
+                member_label = "Đặc vụ" if mode == "sortie" else "Đặc vụ cày file lưu"
+                text = f"#{i}  Tỷ lệ thắng: {wr:.0%}  Số người dùng: {uc}  {member_label}: {fm}  Ngôn ngữ: {gl}  Phiên bản: {ver}"
             else:
-                text = f"#{i}  胜率: {wr:.0%}  使用人数: {uc}  语言: {gl}  版本: {ver}"
+                text = f"#{i}  Tỷ lệ thắng: {wr:.0%}  Số người dùng: {uc}  Ngôn ngữ: {gl}  Phiên bản: {ver}"
             item = QListWidgetItem(text)
             item.setData(0x100, r)  # 36 = Qt.UserRole
             config_list.addItem(item)
@@ -463,18 +463,18 @@ def show_hot_configs_dialog(task: TriggerTask, mode: str):
         if not r:
             return
         reply = QMessageBox.question(
-            dialog, "确认应用",
-            f"将应用所选配置（胜率: {r['avg_win_rate']:.0%}, 使用人数: {r['user_count']}）\n当前配置将被覆盖。\n\n是否继续？",
+            dialog, "Xác nhận áp dụng",
+            f"Sẽ áp dụng cấu hình đã chọn (Tỷ lệ thắng: {r['avg_win_rate']:.0%}, Số người dùng: {r['user_count']})\nCấu hình hiện tại sẽ bị ghi đè.\n\nBạn có muốn tiếp tục không?",
             QMessageBox.Yes | QMessageBox.No,
         )
         if reply == QMessageBox.Yes:
             success = _import_config_from_text(task, r["config_b64"])
             if success:
-                QMessageBox.information(dialog, "导入成功", "热门配置已成功应用！")
+                QMessageBox.information(dialog, "Nhập thành công", "Cấu hình phổ biến đã được áp dụng thành công!")
                 refresh_task_config_widgets(task)
                 dialog.accept()
             else:
-                QMessageBox.warning(dialog, "导入失败", "配置解析失败，请重试。")
+                QMessageBox.warning(dialog, "Nhập thất bại", "Phân tích cấu hình thất bại, vui lòng thử lại.")
 
     # 绑定事件
     sort_combo.currentIndexChanged.connect(on_filter_changed)

@@ -100,16 +100,16 @@ def migrate_game_language_config_file(task):
 
 
 def _export_config_to_text(task):
-    """将任务的用户配置导出为 base64 编码文本。"""
+    """Xuất cấu hình người dùng của nhiệm vụ thành chuỗi mã hóa base64."""
     config_file = task.config.config_file
     if not os.path.exists(config_file):
-        task.log_info("配置文件不存在，无法导出")
+        task.log_info("Tệp cấu hình không tồn tại, không thể xuất")
         return None
     try:
         with open(config_file, 'r', encoding='utf-8') as f:
             data = json.load(f)
     except Exception as e:
-        task.log_info(f"读取配置文件失败: {e}")
+        task.log_info(f"Đọc tệp cấu hình thất bại: {e}")
         return None
     # 只保留用户配置项（去掉 _ 开头的内部状态）
     clean = {
@@ -128,15 +128,15 @@ def _export_config_to_text(task):
 
 
 def _import_config_from_text(task, encoded_text):
-    """从 base64 编码文本导入配置到任务配置文件。"""
+    """Nhập cấu hình từ chuỗi mã hóa base64 vào tệp cấu hình nhiệm vụ."""
     try:
         json_str = base64.b64decode(encoded_text.encode('ascii')).decode('utf-8')
         data = json.loads(json_str)
     except Exception as e:
-        task.log_info(f"解码失败，无效的配置编码: {e}")
+        task.log_info(f"Giải mã thất bại, mã cấu hình không hợp lệ: {e}")
         return False
     if not isinstance(data, dict):
-        task.log_info("无效的配置数据格式")
+        task.log_info("Định dạng dữ liệu cấu hình không hợp lệ")
         return False
     _migrate_flash_priority(data)
 
@@ -155,7 +155,7 @@ def _import_config_from_text(task, encoded_text):
             continue
         sanitized_data[key] = value
     if ignored_keys:
-        task.log_info(f"导入配置时忽略无效或已废弃字段: {', '.join(ignored_keys)}")
+        task.log_info(f"Bỏ qua trường không hợp lệ hoặc đã lỗi thời khi nhập cấu hình: {', '.join(ignored_keys)}")
     data = sanitized_data
 
     # 写入配置文件
@@ -186,37 +186,37 @@ def _import_config_from_text(task, encoded_text):
         task.config.update(data)
         return True
     except Exception as e:
-        task.log_info(f"写入配置文件失败: {e}")
+        task.log_info(f"Ghi tệp cấu hình thất bại: {e}")
         return False
 
 
 def make_export_callback(task):
-    """生成导出配置按钮的回调函数。"""
+    """Tạo hàm callback cho nút xuất cấu hình."""
     def export():
         from PySide6.QtWidgets import QMessageBox, QApplication
         encoded = _export_config_to_text(task)
         if encoded is None:
-            QMessageBox.warning(None, "导出失败", "配置文件不存在或读取失败")
+            QMessageBox.warning(None, "Xuất thất bại", "Tệp cấu hình không tồn tại hoặc đọc thất bại")
             return
         # 复制到剪贴板
         QApplication.clipboard().setText(encoded)
         QMessageBox.information(
-            None, "导出成功",
-            "配置已复制到剪贴板，可以粘贴发送给其他人。\n\n"
-            f"（编码长度: {len(encoded)} 字符）"
+            None, "Xuất thành công",
+            "Cấu hình đã được sao chép vào bộ nhớ tạm (clipboard), bạn có thể dán để chia sẻ cho người khác.\n\n"
+            f"（Độ dài mã: {len(encoded)} ký tự）"
         )
-        task.log_info(f"配置导出成功，共 {len(encoded)} 字符")
+        task.log_info(f"Xuất cấu hình thành công, tổng cộng {len(encoded)} ký tự")
     return export
 
 
 def make_import_callback(task):
-    """生成导入配置按钮的回调函数。"""
+    """Tạo hàm callback cho nút nhập cấu hình."""
     def import_config():
         from PySide6.QtWidgets import QInputDialog, QMessageBox, QApplication
         # 尝试从剪贴板预填文本
         clipboard_text = QApplication.clipboard().text()
         text, ok = QInputDialog.getMultiLineText(
-            None, "导入配置", "请粘贴别人分享的配置编码：",
+            None, "Nhập cấu hình", "Vui lòng dán mã cấu hình được chia sẻ vào đây:",
             clipboard_text if clipboard_text else ""
         )
         if not ok or not text.strip():
@@ -224,41 +224,41 @@ def make_import_callback(task):
         text = text.strip()
         success = _import_config_from_text(task, text)
         if success:
-            QMessageBox.information(None, "导入成功", "配置已成功导入并应用！")
-            task.log_info("配置导入成功")
+            QMessageBox.information(None, "Nhập thành công", "Cấu hình đã được nhập và áp dụng thành công!")
+            task.log_info("Nhập cấu hình thành công")
             refresh_task_config_widgets(task)
         else:
-            QMessageBox.warning(None, "导入失败", "编码无效或写入失败，请检查后重试。")
+            QMessageBox.warning(None, "Nhập thất bại", "Mã cấu hình không hợp lệ hoặc ghi thất bại, vui lòng kiểm tra lại.")
     return import_config
 
 
 def _local_profiles_file():
-    """返回独立于任务配置文件的本地方案存储路径。"""
+    """Trả về đường dẫn lưu trữ các cấu hình cục bộ."""
     return get_relative_path(Config.config_folder, LOCAL_CONFIG_PROFILES_FILE)
 
 
 def _read_local_profiles(task):
-    """读取全部本地配置方案；文件损坏时返回空结构。"""
+    """Đọc toàn bộ cấu hình cục bộ; nếu tệp hỏng trả về rỗng."""
     data = read_json_file(_local_profiles_file())
     if isinstance(data, dict):
         return data
     if data is not None:
-        task.log_info("本地配置方案文件格式无效，将按空方案处理")
+        task.log_info("Định dạng tệp cấu hình cục bộ không hợp lệ, xử lý như cấu hình trống")
     return {}
 
 
 def _write_local_profiles(task, data):
-    """写入全部本地配置方案。"""
+    """Ghi toàn bộ cấu hình cục bộ."""
     try:
         write_json_file(_local_profiles_file(), data)
         return True
     except Exception as exc:
-        task.log_info(f"写入本地配置方案失败: {exc}")
+        task.log_info(f"Ghi tệp cấu hình cục bộ thất bại: {exc}")
         return False
 
 
 def _current_config_snapshot(task):
-    """保存当前模式全部有效配置，不包含框架内部字段。"""
+    """Lưu toàn bộ cấu hình hợp lệ hiện tại, không bao gồm các trường nội bộ của framework."""
     snapshot = {}
     for key, default_value in getattr(task, "default_config", {}).items():
         if key.startswith("_") or key in UI_ONLY_CONFIG_KEYS:
@@ -270,7 +270,7 @@ def _current_config_snapshot(task):
 
 
 def _game_language(task):
-    """获取用户当前选择的游戏语言。"""
+    """Lấy ngôn ngữ game hiện tại mà người dùng đã chọn."""
     try:
         return str(task.config.get("游戏语言", "简体中文")).strip() or "简体中文"
     except Exception:
@@ -278,7 +278,7 @@ def _game_language(task):
 
 
 def _app_version():
-    """获取当前程序版本，用于生成默认方案名称。"""
+    """Lấy phiên bản ứng dụng hiện tại để tạo tên cấu hình mặc định."""
     try:
         configured_version = (og.config or {}).get("version")
         if configured_version:
@@ -293,18 +293,18 @@ def _app_version():
 
 
 def _default_local_profile_name(task, mode):
-    """按模式、主战员、语言和版本生成默认方案名称。"""
+    """Tạo tên cấu hình mặc định theo chế độ, đặc vụ, ngôn ngữ và phiên bản."""
     if mode == "chaos":
         member_name = str(task.config.get("刷存档主战员", "")).strip()
     else:
         members = task.config.get("出战主战员优先级", [])
         member_name = str(members[0]).strip() if isinstance(members, list) and members else ""
-    member_name = member_name or "未指定主战员"
+    member_name = member_name or "Chưa chỉ định Đặc vụ"
     return f"{member_name}-{_game_language(task)}-{_app_version()}"
 
 
 def _apply_local_profile(task, profile):
-    """复用导入配置的校验、落盘和缓存刷新逻辑加载本地方案。"""
+    """Tái sử dụng logic xác thực, lưu và làm mới bộ nhớ cache khi tải cấu hình cục bộ."""
     encoded = base64.b64encode(
         json.dumps(profile, ensure_ascii=False, separators=(",", ":")).encode("utf-8")
     ).decode("ascii")
@@ -312,7 +312,7 @@ def _apply_local_profile(task, profile):
 
 
 def make_save_local_config_callback(task, mode):
-    """生成保存本地配置方案按钮的回调函数。"""
+    """Tạo hàm callback cho nút lưu cấu hình cục bộ."""
     def save_local_config():
         from PySide6.QtWidgets import QInputDialog, QMessageBox
 
@@ -321,8 +321,8 @@ def make_save_local_config_callback(task, mode):
         while True:
             entered_name, accepted = QInputDialog.getText(
                 None,
-                "保存配置",
-                "请输入本地配置名称：",
+                "Lưu cấu hình",
+                "Vui lòng nhập tên cấu hình cục bộ:",
                 text=proposed_name,
             )
             if not accepted:
@@ -337,9 +337,9 @@ def make_save_local_config_callback(task, mode):
             if profile_name in mode_profiles:
                 reply = QMessageBox.question(
                     None,
-                    "配置名称重复",
-                    f"本地配置“{profile_name}”已存在。\n\n"
-                    "选择“是”覆盖原配置，选择“否”重新命名。",
+                    "Trùng tên cấu hình",
+                    f"Cấu hình cục bộ “{profile_name}” đã tồn tại.\n\n"
+                    "Chọn “Yes” (Có) để ghi đè cấu hình cũ, chọn “No” (Không) để đặt tên khác.",
                     QMessageBox.Yes | QMessageBox.No | QMessageBox.Cancel,
                     QMessageBox.No,
                 )
@@ -354,19 +354,19 @@ def make_save_local_config_callback(task, mode):
             if _write_local_profiles(task, all_profiles):
                 QMessageBox.information(
                     None,
-                    "保存成功",
-                    f"当前配置已保存为“{profile_name}”。",
+                    "Lưu thành công",
+                    f"Cấu hình hiện tại đã được lưu thành “{profile_name}”.",
                 )
-                task.log_info(f"本地配置保存成功: {profile_name}")
+                task.log_info(f"Lưu cấu hình cục bộ thành công: {profile_name}")
             else:
-                QMessageBox.warning(None, "保存失败", "本地配置文件写入失败。")
+                QMessageBox.warning(None, "Lưu thất bại", "Ghi tệp cấu hình cục bộ thất bại.")
             return
 
     return save_local_config
 
 
 def make_switch_local_config_callback(task, mode):
-    """生成加载和删除本地配置方案按钮的回调函数。"""
+    """Tạo hàm callback cho nút tải và xóa cấu hình cục bộ."""
     def switch_local_config():
         from PySide6.QtWidgets import (
             QDialog,
@@ -379,16 +379,16 @@ def make_switch_local_config_callback(task, mode):
         )
 
         dialog = QDialog()
-        dialog.setWindowTitle("切换配置")
+        dialog.setWindowTitle("Đổi cấu hình")
         dialog.resize(480, 360)
         layout = QVBoxLayout(dialog)
         profile_list = QListWidget()
         layout.addWidget(profile_list)
 
         button_layout = QHBoxLayout()
-        load_button = QPushButton("加载所选配置")
-        delete_button = QPushButton("删除所选配置")
-        cancel_button = QPushButton("取消")
+        load_button = QPushButton("Tải cấu hình đã chọn")
+        delete_button = QPushButton("Xóa cấu hình đã chọn")
+        cancel_button = QPushButton("Hủy")
         load_button.setEnabled(False)
         delete_button.setEnabled(False)
         button_layout.addStretch()
@@ -421,16 +421,16 @@ def make_switch_local_config_callback(task, mode):
             mode_profiles = _read_local_profiles(task).get(mode, {})
             profile = mode_profiles.get(profile_name) if isinstance(mode_profiles, dict) else None
             if not isinstance(profile, dict):
-                QMessageBox.warning(dialog, "加载失败", "所选本地配置不存在或格式无效。")
+                QMessageBox.warning(dialog, "Tải thất bại", "Cấu hình cục bộ đã chọn không tồn tại hoặc định dạng không hợp lệ.")
                 reload_profile_list()
                 return
             if _apply_local_profile(task, profile):
                 refresh_task_config_widgets(task)
-                QMessageBox.information(dialog, "加载成功", f"已加载“{profile_name}”。")
-                task.log_info(f"本地配置加载成功: {profile_name}")
+                QMessageBox.information(dialog, "Tải thành công", f"Đã tải “{profile_name}”.")
+                task.log_info(f"Tải cấu hình cục bộ thành công: {profile_name}")
                 dialog.accept()
             else:
-                QMessageBox.warning(dialog, "加载失败", "本地配置写入失败。")
+                QMessageBox.warning(dialog, "Tải thất bại", "Ghi tệp cấu hình cục bộ thất bại.")
 
         def delete_selected_profile():
             profile_name = selected_profile_name()
@@ -438,8 +438,8 @@ def make_switch_local_config_callback(task, mode):
                 return
             reply = QMessageBox.question(
                 dialog,
-                "确认删除",
-                f"确定删除本地配置“{profile_name}”吗？",
+                "Xác nhận xóa",
+                f"Bạn có chắc chắn muốn xóa cấu hình cục bộ “{profile_name}” không?",
                 QMessageBox.Yes | QMessageBox.No,
                 QMessageBox.No,
             )
@@ -451,11 +451,11 @@ def make_switch_local_config_callback(task, mode):
                 mode_profiles.pop(profile_name, None)
                 all_profiles[mode] = mode_profiles
             if _write_local_profiles(task, all_profiles):
-                task.log_info(f"已删除本地配置: {profile_name}")
+                task.log_info(f"Đã xóa cấu hình cục bộ: {profile_name}")
                 reload_profile_list()
                 update_button_state()
             else:
-                QMessageBox.warning(dialog, "删除失败", "本地配置文件写入失败。")
+                QMessageBox.warning(dialog, "Xóa thất bại", "Ghi tệp cấu hình cục bộ thất bại.")
 
         profile_list.itemSelectionChanged.connect(update_button_state)
         profile_list.itemDoubleClicked.connect(lambda _item: load_selected_profile())
