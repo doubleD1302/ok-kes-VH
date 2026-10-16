@@ -71,7 +71,7 @@ msgstr "Đã hiển thị các giá trị cấu hình."
 
 msgid ""
 "Demonstrates every configuration widget for English to Chinese translation."
-msgstr "Minh họa tất cả các widget cấu hình cho bản dịch."
+msgstr "Trình diễn các thành phần giao diện cấu hình và kiểm thử Việt hóa."
 
 msgid "Drop Down Config"
 msgstr "Cấu hình Hộp thả xuống"
@@ -125,10 +125,10 @@ msgid "Folder selector configuration that stores the selected folder path."
 msgstr "Cấu hình chọn thư mục để lưu đường dẫn đã chọn."
 
 msgid "Game Hotkey Config"
-msgstr "Cấu hình Phím tắt trong game"
+msgstr "Cấu hình Phím tắt Game"
 
 msgid "In Game Hotkey for Skills"
-msgstr "Phím tắt kỹ năng trong game"
+msgstr "Phím tắt sử dụng kỹ năng trong game"
 
 msgid "Integer Config"
 msgstr "Cấu hình Số nguyên"
@@ -188,7 +188,7 @@ msgid "Select only available multi-selection values."
 msgstr "Chỉ chọn các giá trị chọn nhiều có sẵn."
 
 msgid "Show Config Values"
-msgstr "Xem giá trị cấu hình"
+msgstr "Hiển thị giá trị cấu hình"
 
 msgid "Show Notification"
 msgstr "Hiển thị thông báo"
@@ -245,10 +245,10 @@ msgid "不暂停"
 msgstr "Không tạm dừng"
 
 msgid "丢弃卡牌优先级"
-msgstr "Ưu tiên bỏ bài"
+msgstr "Ưu tiên vứt bỏ thẻ bài"
 
 msgid "主战员优先级"
-msgstr "Ưu tiên Đặc vụ"
+msgstr "Ưu tiên Đặc vụ dự bị / hỗ trợ"
 
 msgid "事件"
 msgstr "Sự kiện (Event)"
@@ -257,16 +257,16 @@ msgid "从要推的图的最左边开始"
 msgstr "Bắt đầu từ ải ngoài cùng bên trái cần vượt"
 
 msgid "任务优先级"
-msgstr "Ưu tiên nhiệm vụ"
+msgstr "Ưu tiên lựa chọn sự kiện / nhiệm vụ"
 
 msgid "休息"
 msgstr "Nghỉ ngơi (Rest)"
 
 msgid "优先使用金币治疗"
-msgstr "Ưu tiên dùng vàng hồi phục"
+msgstr "Ưu tiên dùng vàng để trị liệu"
 
 msgid "优先移除基础牌"
-msgstr "Ưu tiên xóa thẻ bài cơ bản"
+msgstr "Ưu tiên xóa bài cơ bản"
 
 msgid "体力本"
 msgstr "Ải tiêu hao Thể lực"
@@ -275,7 +275,7 @@ msgid "保存配置"
 msgstr "Lưu cấu hình"
 
 msgid "保留大于多少TB的存档"
-msgstr "Giữ lại file lưu lớn hơn (TB)"
+msgstr "Giữ lại bản lưu lớn hơn bao nhiêu TB"
 
 msgid "保留存档"
 msgstr "Giữ lại file lưu"
@@ -296,70 +296,70 @@ msgid "决策构象"
 msgstr "Cấu hình Quyết sách"
 
 msgid "几轮后停止(0为不停止)"
-msgstr "Dừng sau số vòng (0 là không dừng)"
+msgstr "Dừng sau bao nhiêu vòng (0 = Không dừng)"
 
 msgid "出战主战员优先级"
 msgstr "Ưu tiên Đặc vụ xuất chiến"
 
 msgid "出牌优先级"
-msgstr "Ưu tiên đánh bài"
+msgstr "Ưu tiên thứ tự ra bài"
 
 msgid "切换配置"
 msgstr "Đổi cấu hình"
 
 msgid "初始任务必须包含“移除2张”，否则重新开始；不能与“刷初始卡牌”同时使用。"
 msgstr ""
-"Nhiệm vụ khởi đầu bắt buộc phải có \"Xóa 2 lá\", nếu không sẽ làm lại từ "
-"đầu; không thể dùng đồng thời với \"Cày thẻ bài khởi đầu\"."
+"Nhiệm vụ khởi đầu bắt buộc phải có 'Xóa 2 thẻ', nếu không sẽ bắt đầu lại; "
+"không dùng đồng thời với 'Cày thẻ khởi đầu'."
 
 msgid "刷初始卡牌"
 msgstr "Cày thẻ bài khởi đầu"
 
 msgid "刷存档主战员"
-msgstr "Đặc vụ cày file lưu"
+msgstr "Đặc vụ cày file lưu (Save)"
 
 msgid "刷梦边"
-msgstr "Cày Biên giới Giấc mơ"
+msgstr "Cày Biên Giới Giấc Mơ"
 
 msgid "刷空档"
-msgstr "Cày ô bài rỗng"
+msgstr "Cày khởi đầu có xóa 2 thẻ (Khoảng trống)"
 
 msgid "刷钱本"
 msgstr "Ải cày Tiền (Gold)"
 
 msgid "半自动剧情模式"
-msgstr "Chế độ Cốt truyện Bán tự động"
+msgstr "Chế độ Bán tự động Cốt truyện"
 
 msgid "卡牌名称和描述无需完整填写，输入几个关键字即可，但顺序须与游戏原文一致。"
 msgstr ""
-"Tên và mô tả thẻ bài không cần nhập đầy đủ, chỉ cần nhập một vài từ khóa, "
-"nhưng thứ tự phải khớp với nguyên tác trong game."
+"Tên thẻ bài và mô tả không cần nhập đầy đủ, chỉ cần vài từ khóa nhưng thứ tự"
+" phải khớp với nguyên bản trong game."
 
 msgid "卡牌奖励优先级"
-msgstr "Ưu tiên phần thưởng thẻ bài"
+msgstr "Ưu tiên loại phần thưởng thẻ bài"
 
 msgid "只打第一层"
-msgstr "Chỉ đánh tầng 1"
+msgstr "Chỉ đánh tầng 1 (Farm nhanh)"
 
 msgid "国际服请设置为繁体中文"
-msgstr "Máy chủ Quốc tế (Global) vui lòng đặt là Phồn thể (繁体中文)"
+msgstr "Người chơi máy chủ Quốc tế (Global) vui lòng chọn Phồn thể (繁体中文)."
 
 msgid "填写目标卡牌名称后反复刷新初始卡牌；不能与“刷空档”同时使用。"
 msgstr ""
-"Nhập tên thẻ bài mục tiêu để liên tục làm mới thẻ khởi đầu; không thể dùng "
-"đồng thời với \"Cày ô bài rỗng\"."
+"Nhập tên thẻ mục tiêu để liên tục làm mới thẻ khởi đầu; không dùng đồng thời"
+" với 'Cày khoảng trống'."
 
 msgid "复制卡牌列表"
-msgstr "Danh sách thẻ bài cần sao chép"
+msgstr "Danh sách bài cần sao chép"
 
 msgid "多少信用点以上冥想"
-msgstr "Thiền định khi có trên (Điểm tín dụng)"
+msgstr "Mức Credit tối thiểu để thiền định"
 
 msgid "大月卡"
 msgstr "Thẻ Tháng Cao Cấp"
 
 msgid "存储数据保存上限大于多少"
-msgstr "Giới hạn lưu trữ dữ liệu lớn hơn"
+msgstr "Giới hạn dung lượng lưu trữ trên bao nhiêu (TB)"
 
 msgid "导入配置码"
 msgstr "Nhập mã cấu hình"
@@ -378,18 +378,18 @@ msgid ""
 "不上传任何个人信息、游戏账号、截图、IP地址等隐私数据。\n"
 "仅上传配置内容和胜率统计数据。"
 msgstr ""
-"Khi bật, cứ sau mỗi 5 phút sẽ tự động tải lên thông tin cấu hình ẩn danh và tỷ lệ thắng để hỗ trợ thống kê cấu hình phổ biến.\n"
-"Tuyệt đối không tải lên thông tin cá nhân, tài khoản game, ảnh chụp màn hình, địa chỉ IP hay bất kỳ dữ liệu riêng tư nào.\n"
-"Chỉ tải lên nội dung thiết lập cấu hình và số liệu thống kê tỷ lệ thắng."
+"Khi bật, mỗi 5 phút sẽ tự động tải lên ẩn danh thông tin cấu hình và tỷ lệ thắng để đóng góp vào danh sách cấu hình phổ biến.\n"
+"Tuyệt đối không tải lên thông tin cá nhân, tài khoản game, ảnh chụp màn hình hay địa chỉ IP.\n"
+"Chỉ tải lên nội dung cấu hình và số liệu thống kê."
 
 msgid "手枪"
 msgstr "Súng ngắn (HG)"
 
 msgid "拉黑主战员"
-msgstr "Chặn Đặc vụ"
+msgstr "Đặc vụ đưa vào danh sách đen"
 
 msgid "拉黑任务"
-msgstr "Chặn nhiệm vụ"
+msgstr "Sự kiện / nhiệm vụ đưa vào danh sách đen"
 
 msgid "指定面具卡牌"
 msgstr "Chỉ định thẻ Mặt nạ"
@@ -404,13 +404,13 @@ msgid "日文"
 msgstr "Tiếng Nhật"
 
 msgid "是否上传配置"
-msgstr "Tự động tải lên cấu hình"
+msgstr "Tự động tải lên cấu hình ẩn danh"
 
 msgid "梦边"
-msgstr "Biên giới Giấc mơ"
+msgstr "Tự động tìm kiếm thẻ Truyền thuyết Biên giới Giấc mơ (梦之边境)"
 
 msgid "治疗崩溃"
-msgstr "Trị liệu trạng thái Sụp đổ"
+msgstr "Tự động trị liệu sụp đổ tinh thần"
 
 msgid "活动情报补给"
 msgstr "Tiếp tế Tình báo Sự kiện"
@@ -419,7 +419,7 @@ msgid "活动自律"
 msgstr "Ủy thác Sự kiện"
 
 msgid "测试trigger"
-msgstr "Kiểm tra Kích hoạt"
+msgstr "Tự động xử lý Kẻ địch bí mật"
 
 msgid "深度搜索"
 msgstr "Tìm kiếm Chuyên sâu"
@@ -437,10 +437,10 @@ msgid "班组"
 msgstr "Tiểu đội"
 
 msgid "生命值大于多少优先闪光(百分比)"
-msgstr "Máu trên bao nhiêu % thì ưu tiên Flash"
+msgstr "HP trên bao nhiêu % ưu tiên làm sáng"
 
 msgid "移除卡牌列表"
-msgstr "Danh sách thẻ bài cần xóa"
+msgstr "Danh sách bài cần xóa"
 
 msgid "突击"
 msgstr "Đột kích (AR & SG)"
@@ -449,49 +449,49 @@ msgid "竞技场"
 msgstr "Đấu trường (Arena)"
 
 msgid "第几层boss前自动暂停"
-msgstr "Tự động tạm dừng trước Boss tầng"
+msgstr "Tự động tạm dừng trước Boss tầng thứ mấy"
 
 msgid "简体中文"
-msgstr "Giản thể (简体中文)"
+msgstr "Tiếng Trung Giản thể (Bản CN)"
 
 msgid "精英"
 msgstr "Tinh anh (Elite)"
 
 msgid "繁体中文"
-msgstr "Phồn thể (繁体中文)"
+msgstr "Tiếng Trung Phồn thể (Bản Global / Quốc tế)"
 
 msgid "自动"
-msgstr "Tự động"
+msgstr "Tự động (Auto)"
 
 msgid "自动出击模式"
-msgstr "Tự động Xuất kích"
+msgstr "Chế độ Tự động Xuất kích"
 
 msgid "自动刷体力"
 msgstr "Tự động cày Thể lực"
 
 msgid "自动卡厄思模式"
-msgstr "Tự động Khiêu chiến Chaos"
+msgstr "Chế độ Tự động Kaos"
 
 msgid "自动模式仅在内存不少于12GB的Intel设备上使用OpenVINO，其他设备使用ONNX Runtime。修改后重启程序生效。"
 msgstr ""
-"Chế độ tự động chỉ kích hoạt OpenVINO trên thiết bị Intel có RAM từ 12GB trở"
-" lên, các thiết bị khác sẽ dùng ONNX Runtime. Khởi động lại ứng dụng để cài "
-"đặt có hiệu lực."
+"Chế độ Tự động chỉ bật OpenVINO trên thiết bị Intel có RAM từ 12GB trở lên, "
+"các thiết bị khác sẽ dùng ONNX Runtime. Thay đổi sẽ có hiệu lực sau khi khởi"
+" động lại."
 
 msgid "英文"
 msgstr "Tiếng Anh"
 
 msgid "获得卡牌优先级"
-msgstr "Ưu tiên nhận thẻ bài"
+msgstr "Ưu tiên chọn nhận bài"
 
 msgid "装备1号位优先级"
-msgstr "Ưu tiên trang bị ô 1"
+msgstr "Ưu tiên Trang bị ô 1"
 
 msgid "装备2号位优先级"
-msgstr "Ưu tiên trang bị ô 2"
+msgstr "Ưu tiên Trang bị ô 2"
 
 msgid "装备3号位优先级"
-msgstr "Ưu tiên trang bị ô 3"
+msgstr "Ưu tiên Trang bị ô 3"
 
 msgid "触发器会不断调用run方法"
 msgstr "Trình kích hoạt liên tục gọi hàm run"
@@ -500,13 +500,13 @@ msgid "购买免费礼包"
 msgstr "Nhận gói quà miễn phí"
 
 msgid "路线优先级"
-msgstr "Ưu tiên lộ trình"
+msgstr "Ưu tiên lựa chọn lộ trình"
 
 msgid "跳过非优先级卡牌"
 msgstr "Bỏ qua thẻ bài không ưu tiên"
 
 msgid "进入商店"
-msgstr "Vào cửa hàng"
+msgstr "Tự động vào Cửa hàng (Shop)"
 
 msgid "选择游戏客户端语言，影响OCR文本匹配"
 msgstr "Chọn ngôn ngữ client game, ảnh hưởng đến độ chuẩn xác nhận diện OCR"
@@ -515,42 +515,42 @@ msgid "邮件"
 msgstr "Hộp thư"
 
 msgid "配置上传"
-msgstr "Đồng bộ cấu hình"
+msgstr "Tải lên Cấu hình"
 
 msgid "配置操作"
 msgstr "Thao tác cấu hình"
 
 msgid "闪光优先级"
-msgstr "Ưu tiên thẻ Flash"
+msgstr "Thứ tự ưu tiên làm sáng chi tiết"
 
 msgid "闪光卡牌列表"
-msgstr "Danh sách thẻ bài Flash"
+msgstr "Danh sách bài cần làm sáng (Flash)"
 
 msgid "需要冥想的卡牌"
-msgstr "Thẻ bài cần thiền định"
+msgstr "Thẻ bài cần thiền định (Delang)"
 
 msgid "面具卡牌刻印"
-msgstr "Khắc ấn thẻ Mặt nạ"
+msgstr "Khắc ấn trên thẻ Mặt nạ"
 
 msgid "领任务"
 msgstr "Nhận nhiệm vụ"
 
 msgid "领取奖励"
-msgstr "Nhận phần thưởng"
+msgstr "Tự động nhận thưởng"
 
 msgid "领取奖励(只使用验证卡)"
-msgstr "Nhận phần thưởng (chỉ dùng thẻ xác thực)"
+msgstr "Nhận thưởng (Chỉ dùng thẻ xác thực)"
 
 msgid "首层刷特定闪光"
-msgstr "Tầng 1 cày thẻ Flash chỉ định"
+msgstr "Tầng 1 cày làm sáng đặc định"
 
 msgid "默认刷闪光优先级第一张，可刷神闪，第一层没刷出自动逃脱"
 msgstr ""
-"Mặc định cày thẻ đầu tiên trong danh sách ưu tiên Flash, có thể cày Thần "
-"Flash; nếu tầng 1 không ra sẽ tự động đào tẩu."
+"Mặc định cày thẻ đầu tiên trong ưu tiên làm sáng, có thể cày Thần Sáng. Nếu "
+"tầng 1 không ra sẽ tự động đào tẩu."
 
 msgid "从右往左出牌"
-msgstr "Đánh bài từ phải sang trái"
+msgstr "Ra bài từ phải sang trái"
 
 msgid "DiagnosisTask"
 msgstr "Chẩn đoán Môi trường & Hệ thống"
@@ -592,7 +592,7 @@ msgid "Reset Config"
 msgstr "Đặt lại cấu hình mặc định"
 
 msgid "Add Start Menu Shortcut"
-msgstr "Tạo phím tắt Start Menu"
+msgstr "Thêm lối tắt vào Start Menu"
 
 msgid "Delete Task"
 msgstr "Xóa nhiệm vụ"
@@ -762,7 +762,7 @@ msgstr ""
 "đâu, hãy yêu cầu người bán hoàn tiền ngay lập tức!"
 
 msgid "Are you sure you want to delete {}"
-msgstr "Bạn có chắc chắn muốn xóa {} không?"
+msgstr "Bạn có chắc chắn muốn xóa nhiệm vụ \"{}\" không?"
 
 msgid "Failed to modify task: cannot delete old task"
 msgstr "Chỉnh sửa nhiệm vụ thất bại: không thể xóa nhiệm vụ cũ"
@@ -940,13 +940,13 @@ msgid "Are you sure you want to delete the script "
 msgstr "Bạn có chắc chắn muốn xóa tập lệnh "
 
 msgid "Waiting for {task_name} task to be completed"
-msgstr "Đang chờ nhiệm vụ {task_name} hoàn thành"
+msgstr "Đang chờ nhiệm vụ \"{task_name}\" hoàn thành"
 
 msgid "Actions"
 msgstr "Hành động"
 
 msgid "Alert"
-msgstr "Cảnh báo"
+msgstr "Thông báo / Cảnh báo"
 
 msgid "Browse"
 msgstr "Duyệt tìm..."
@@ -955,7 +955,7 @@ msgid "Cancel"
 msgstr "Hủy"
 
 msgid "Clear"
-msgstr "Xóa"
+msgstr "Xóa trắng"
 
 msgid "Close"
 msgstr "Đóng"
@@ -973,7 +973,7 @@ msgid "Disabled"
 msgstr "Tắt"
 
 msgid "Edit"
-msgstr "Chỉnh sửa"
+msgstr "Sửa"
 
 msgid "Enabled"
 msgstr "Bật"
@@ -985,7 +985,7 @@ msgid "Info"
 msgstr "Thông tin"
 
 msgid "No"
-msgstr "Tắt / Không"
+msgstr "Tắt"
 
 msgid "OK"
 msgstr "Đồng ý"
@@ -1024,7 +1024,7 @@ msgid "Version Update"
 msgstr "Cập nhật Phiên bản"
 
 msgid "Yes"
-msgstr "Bật / Có"
+msgstr "Bật"
 
 msgid "{key} is invalid, please check the hotkey config!"
 msgstr "Phím {key} không hợp lệ, vui lòng kiểm tra cấu hình phím tắt!"
@@ -1033,13 +1033,13 @@ msgid "About"
 msgstr "Giới thiệu"
 
 msgid "Capture"
-msgstr "Bắt đầu & Kết nối"
+msgstr "Chụp màn hình"
 
 msgid "Capture Error"
 msgstr "Lỗi chụp màn hình"
 
 msgid "Debug"
-msgstr "Gỡ lỗi & Nhà phát triển"
+msgstr "Bản thử nghiệm"
 
 msgid "Do you want to exit the application?"
 msgstr "Bạn có chắc chắn muốn thoát ứng dụng không?"
@@ -1051,7 +1051,7 @@ msgid "Exit"
 msgstr "Thoát"
 
 msgid "Guide"
-msgstr "Hướng dẫn sử dụng"
+msgstr "Hướng dẫn"
 
 msgid "Home"
 msgstr "Trang chủ"
@@ -1075,7 +1075,7 @@ msgid "Restart"
 msgstr "Khởi động lại"
 
 msgid "Run Code"
-msgstr "Chạy mã Python"
+msgstr "Chạy mã"
 
 msgid "Schedule"
 msgstr "Lập lịch"
@@ -1099,7 +1099,7 @@ msgid "Templates"
 msgstr "Mẫu hình ảnh"
 
 msgid "Trigger Tasks"
-msgstr "Nhiệm vụ Tự động"
+msgstr "Nhiệm vụ tự động kích hoạt"
 
 msgid "Triggers"
 msgstr "Tự động (Triggers)"
@@ -1179,7 +1179,7 @@ msgid "Enable Boxes"
 msgstr "Bật khung đánh dấu"
 
 msgid "Export Logs"
-msgstr "Xuất nhật ký (Logs)"
+msgstr "Xuất nhật ký"
 
 msgid "Export failed"
 msgstr "Xuất nhật ký thất bại"
@@ -1194,7 +1194,7 @@ msgid "Log Folder"
 msgstr "Thư mục nhật ký"
 
 msgid "Open Logs"
-msgstr "Mở nhật ký"
+msgstr "Mở thư mục nhật ký"
 
 msgid "PC"
 msgstr "Bản PC"
@@ -1296,31 +1296,31 @@ msgid "App Config"
 msgstr "Cấu hình Ứng dụng"
 
 msgid "Application Theme"
-msgstr "Giao diện Ứng dụng"
+msgstr "Chủ đề Giao diện"
 
 msgid "Change the appearance of the application"
-msgstr "Thay đổi chủ đề màu sắc giao diện của ứng dụng"
+msgstr "Thay đổi giao diện màu sắc của ứng dụng"
 
 msgid "Configuration takes effect after restart"
 msgstr "Cấu hình sẽ có hiệu lực sau khi khởi động lại ứng dụng"
 
 msgid "Dark"
-msgstr "Giao diện Tối"
+msgstr "Tối"
 
 msgid "Language"
 msgstr "Ngôn ngữ"
 
 msgid "Light"
-msgstr "Giao diện Sáng"
+msgstr "Sáng"
 
 msgid "Set your preferred language"
-msgstr "Chọn ngôn ngữ hiển thị bạn muốn sử dụng"
+msgstr "Chọn ngôn ngữ hiển thị mong muốn của bạn"
 
 msgid "Updated successfully"
 msgstr "Cập nhật thành công"
 
 msgid "Use system setting"
-msgstr "Theo cài đặt hệ thống"
+msgstr "Theo hệ thống"
 
 msgid "Arknights: Endfield"
 msgstr "Arknights: Endfield (明日方舟：终末地)"
@@ -1332,7 +1332,7 @@ msgid "Chaos Zero Nightmare"
 msgstr "Chaos Zero Nightmare (卡厄思梦境)"
 
 msgid "Check for updates"
-msgstr "Kiểm tra cập nhật"
+msgstr "Kiểm tra bản cập nhật mới"
 
 msgid "Downgrade success {from_version} -> {to_version}"
 msgstr "Hạ cấp thành công {from_version} -> {to_version}"
@@ -1404,19 +1404,19 @@ msgid "Discord"
 msgstr "Discord"
 
 msgid "FAQ"
-msgstr "Câu hỏi thường gặp (FAQ)"
+msgstr "Hướng dẫn sử dụng (FAQ)"
 
 msgid "GitHub"
 msgstr "GitHub"
 
 msgid "Share"
-msgstr "Chia sẻ"
+msgstr "Chia sẻ liên kết tải"
 
 msgid "Share Link copied to clipboard"
 msgstr "Liên kết chia sẻ đã được sao chép vào clipboard"
 
 msgid "Sponsor"
-msgstr "Ủng hộ (Tài trợ)"
+msgstr "Tài trợ & Ủng hộ"
 
 msgid "Are you sure you want to update to {version} {type}?"
 msgstr "Bạn có chắc chắn muốn cập nhật lên {version} {type} không?"
@@ -1765,7 +1765,7 @@ msgid "Auto exit because game exited"
 msgstr "Tự động đóng do game đã thoát"
 
 msgid "Basic Options"
-msgstr "Tùy chọn cơ bản"
+msgstr "Cài đặt cơ bản"
 
 msgid "Blur"
 msgstr "Làm mờ (Blur)"
@@ -1956,3 +1956,15 @@ msgstr "Gỡ lỗi"
 
 msgid "Can"
 msgstr "Có thể"
+
+msgid "Already exists in '{}'"
+msgstr "Đã tồn tại trong '{}'"
+
+msgid "Are you sure you want to delete '{}'?"
+msgstr "Bạn có chắc chắn muốn xóa '{}' không?"
+
+msgid "Flow Layout"
+msgstr "Bố cục dạng dòng"
+
+msgid "Recording will start when window '{hwnd_name}' becomes active."
+msgstr "Quá trình ghi sẽ bắt đầu khi cửa sổ '{hwnd_name}' hoạt động."
