@@ -15,26 +15,30 @@ SHOW_SEARCH_OPTIONS_THRESHOLD = 20
 class ModifyListDialog(MessageBoxBase):
     list_modified = Signal(list)
 
-    def __init__(self, items, parent, options_available=None, allow_duplication=False):
+    def __init__(self, items, parent, options_available=None, allow_duplication=False, title_text=None):
         super().__init__(parent)
         self.original_items = list(items)
         self.options_available = list(options_available) if options_available is not None else None
         self.allow_duplication = allow_duplication
+        self.title_text = title_text
         self.list_widget = ListWidget()
         self.option_buttons = {}
         self.source_by_display = {}
         self.option_search_box = None
         self._options_container = None
 
-        if self.options_available is None:
-            self.list_widget.addItems(self.original_items)
-        else:
-            self.source_by_display = {
-                og.app.tr(option): option for option in self.options_available
-            }
-            self.list_widget.addItems([
-                og.app.tr(item) for item in self.original_items if item in self.options_available
-            ])
+        if self.title_text:
+            self.titleLabel.setText(f"Chỉnh sửa: {og.app.tr(self.title_text)}")
+
+        if self.options_available is not None:
+            for option in self.options_available:
+                self.source_by_display[og.app.tr(option)] = option
+
+        for item in self.original_items:
+            tr_item = og.app.tr(item)
+            if tr_item not in self.source_by_display:
+                self.source_by_display[tr_item] = item
+            self.list_widget.addItem(tr_item)
 
         self.move_up_button = PushButton(FluentIcon.UP, self.tr("Move Up"))
         self.move_up_button.clicked.connect(self.move_up)
@@ -177,8 +181,8 @@ class ModifyListDialog(MessageBoxBase):
                 self._options_container.update()
 
     def _wrap_dialog_buttons(self):
-        self.yesButton.setFixedWidth(self.yesButton.sizeHint().width() * 2)
-        self.cancelButton.setFixedWidth(self.cancelButton.sizeHint().width() * 2)
+        self.yesButton.setMinimumWidth(max(120, self.yesButton.sizeHint().width()))
+        self.cancelButton.setMinimumWidth(max(120, self.cancelButton.sizeHint().width()))
 
     def move_up(self):
         current_row = self.list_widget.currentRow()
@@ -225,9 +229,8 @@ class ModifyListDialog(MessageBoxBase):
 
     def confirm(self):
         items_text = [self.list_widget.item(i).text() for i in range(self.list_widget.count())]
-        if self.options_available is not None:
-            items_text = [self.source_by_display[text] for text in items_text]
-        self.list_modified.emit(items_text)
+        mapped = [self.source_by_display.get(text, text) for text in items_text]
+        self.list_modified.emit(mapped)
         self.close()
 
     def cancel(self):

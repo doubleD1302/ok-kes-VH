@@ -6,7 +6,8 @@ class GetMengbian(BaseTask):
         super().__init__(*args, **kwargs)
         self.name = "刷梦边"
         self.description = "梦边"
-        self.instructions = """<a href="https://github.com/ok-oldking/ok-py">ok-py</a>"""
+        self.instructions = """<b>Nhiệm vụ Cày Biên Giới Giấc Mơ:</b><br><br>
+Tự động vào ải Biên giới Giấc mơ (梦之边境) để tìm thẻ bài Truyền thuyết Trung lập, nếu không xuất hiện sẽ tự động đào tẩu và thử lại tối đa 300 lần."""
 
     def run(self):
         for i in range(300):

@@ -29,7 +29,10 @@ class LabelAndDropDown(ConfigLabelAndWidget):
             # Measure text width
             max_width = max(max_width, fm.horizontalAdvance(option))
 
-        self.combo_box.setFixedWidth(control_width(max_width + 50))
+        from ok.gui.common.design_system import DesignToken
+        calculated_width = control_width(max_width + 50)
+        self.combo_box.setMinimumWidth(calculated_width)
+        self.combo_box.setMaximumWidth(DesignToken.CONTROL_MAX_WIDTH)
 
         self.combo_box.currentTextChanged.connect(self.text_changed)
 

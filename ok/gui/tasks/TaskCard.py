@@ -90,7 +90,7 @@ class TaskCard(ConfigCard):
         self.header_text_layout.addWidget(self.card.contentLabel, 1, Qt.AlignVCenter)
         self.card.vBoxLayout.addLayout(self.header_text_layout)
 
-        compact_height = 50
+        compact_height = 54
         self.card.setFixedHeight(compact_height)
         self.setViewportMargins(0, compact_height, 0, 0)
         self.setFixedHeight(compact_height)
@@ -152,7 +152,7 @@ class TaskCard(ConfigCard):
                 if not part.startswith('<a '):
                     parts[i] = re.sub(r'(https?://[^\s<>"]+)', r'<a href="\1">\1</a>', part)
             html = ''.join(parts).replace('\n', '<br>')
-            w = Dialog(self.task.name, "", self.window())
+            w = Dialog(og.app.tr(self.task.name), "", self.window())
             w.setContentCopyable(True)
             w.cancelButton.hide()
             w.contentLabel.setTextFormat(Qt.RichText)
@@ -162,7 +162,7 @@ class TaskCard(ConfigCard):
             w.exec()
 
     def delete_task(self):
-        w = MessageBox(self.tr('Delete Task'), self.tr('Are you sure you want to delete {}').format(self.task.name),
+        w = MessageBox(self.tr('Delete Task'), self.tr('Are you sure you want to delete {}').format(og.app.tr(self.task.name)),
                        self.window())
         if w.exec():
             logger.info('Yes button is pressed')

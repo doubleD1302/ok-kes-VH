@@ -22,15 +22,15 @@ class LabelAndWidget(QWidget):
         if '{app_name}' in translated_title:
             translated_title = translated_title.format(app_name=(og.config or {}).get('gui_title', ''))
         self.title = QLabel(translated_title)
-        # self.title.setWordWrap(True)
-        self.title.setSizePolicy(QSizePolicy.Minimum, QSizePolicy.Minimum)
+        self.title.setWordWrap(True)
+        self.title.setSizePolicy(QSizePolicy.Preferred, QSizePolicy.Preferred)
         self.title_layout.addWidget(self.title)
         self.title.setObjectName('titleLabel')
         if content:
             self.contentLabel = QLabel(og.app.tr(content))
             self.contentLabel.setObjectName('contentLabel')
-            self.contentLabel.setMinimumWidth(220)
             self.contentLabel.setWordWrap(True)
+            self.contentLabel.setSizePolicy(QSizePolicy.Preferred, QSizePolicy.Preferred)
             self.title_layout.addWidget(self.contentLabel)
         self.title_layout.setAlignment(Qt.AlignVCenter)
 

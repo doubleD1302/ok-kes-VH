@@ -175,12 +175,12 @@ config = {
         'min_size': (1280, 720), #只要求16:9且不低于720p，满足条件时不强制调整窗口
         'force_ratio': True, #不弹分辨率报错弹窗，由resize_to处理
     },
-    'links': { # 关于里显示的链接, 可选
+    'links': { # Về liên kết hiển thị trong tab Giới thiệu
             'default': {
-                'github': 'https://github.com/baoxin1100/ok-kes',
-                'share': 'github：https://github.com/baoxin1100/ok-kes/releases；Mirror酱：https://mirrorchyan.com/zh/projects?rid=ok-kes；百度网盘：https://pan.baidu.com/s/156h76VWpUwPIffkZqFy_dw?pwd=okes；夸克网盘：https://pan.quark.cn/s/13b266aa8e80',
+                'github': 'https://github.com/doubleD1302/ok-kes-VH',
+                'share': 'GitHub Releases: https://github.com/doubleD1302/ok-kes-VH/releases',
                 'qq_channel': 'https://pd.qq.com/s/eopggnxcu',
-                'faq': 'https://github.com/baoxin1100/ok-kes',
+                'faq': 'https://github.com/doubleD1302/ok-kes-VH',
                 'sponsor': 'local'
             }
         },

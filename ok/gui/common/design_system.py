@@ -27,7 +27,7 @@ class DesignToken:
 
     CONTROL_WIDTH = 180
     CONTROL_MIN_WIDTH = 160
-    CONTROL_MAX_WIDTH = 320
+    CONTROL_MAX_WIDTH = 480
 
 
 def configure_page_layout(layout: QLayout) -> None:

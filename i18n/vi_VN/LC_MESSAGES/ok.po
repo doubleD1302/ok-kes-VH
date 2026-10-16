@@ -551,3 +551,1408 @@ msgstr ""
 
 msgid "从右往左出牌"
 msgstr "Đánh bài từ phải sang trái"
+
+msgid "DiagnosisTask"
+msgstr "Chẩn đoán Môi trường & Hệ thống"
+
+msgid "Diagnosis"
+msgstr "Chẩn đoán"
+
+msgid "QQ群"
+msgstr "Nhóm QQ"
+
+msgid "QQ频道"
+msgstr "Kênh QQ"
+
+msgid "Modify"
+msgstr "Chỉnh sửa"
+
+msgid "Move Up"
+msgstr "Di chuyển lên"
+
+msgid "Move Down"
+msgstr "Di chuyển xuống"
+
+msgid "Available Options"
+msgstr "Tùy chọn khả dụng"
+
+msgid "Selected Options"
+msgstr "Tùy chọn đã chọn"
+
+msgid "Click an option to add it."
+msgstr "Nhấp vào một tùy chọn để thêm vào danh sách."
+
+msgid "Search options..."
+msgstr "Tìm kiếm tùy chọn..."
+
+msgid "Operation"
+msgstr "Thao tác"
+
+msgid "Reset Config"
+msgstr "Đặt lại cấu hình mặc định"
+
+msgid "Add Start Menu Shortcut"
+msgstr "Tạo phím tắt Start Menu"
+
+msgid "Delete Task"
+msgstr "Xóa nhiệm vụ"
+
+msgid "海德玛丽"
+msgstr "Hydemary (海德玛丽)"
+
+msgid "九"
+msgstr "Cửu - Nine (九)"
+
+msgid "力"
+msgstr "Lực - Riki (力)"
+
+msgid "绯"
+msgstr "Phi - Scarlet (绯)"
+
+msgid "米卡"
+msgstr "Mika (米卡)"
+
+msgid "尼娅"
+msgstr "Nia (尼娅)"
+
+msgid "蒂菲拉"
+msgstr "Tiphila (蒂菲拉)"
+
+msgid "麦格纳"
+msgstr "Magna (麦格纳)"
+
+msgid "卡修斯"
+msgstr "Cassius (卡修斯)"
+
+msgid "黛安娜"
+msgstr "Diana (黛安娜)"
+
+msgid "阿黛尔海特"
+msgstr "Adelheid (阿黛尔海特)"
+
+msgid "展开极光"
+msgstr "Mở cực quang (展开极光)"
+
+msgid "解放极光"
+msgstr "Giải phóng cực quang (解放极光)"
+
+msgid "极光剑"
+msgstr "Cực quang kiếm (极光剑)"
+
+msgid "凝聚极光"
+msgstr "Ngưng tụ cực quang (凝聚极光)"
+
+msgid "剑雨"
+msgstr "Mưa kiếm - Kiếm vũ (剑雨)"
+
+msgid "一缕光芒"
+msgstr "Luồng sáng - 1 (一缕光芒)"
+
+msgid "缕光芒"
+msgstr "Luồng sáng (缕光芒)"
+
+msgid "万众英雄"
+msgstr "Vạn chúng anh hùng (万众英雄)"
+
+msgid "水之源"
+msgstr "Nguồn nước (水之源)"
+
+msgid "水之伞"
+msgstr "Dù nước (水之伞)"
+
+msgid "海潮的庇护"
+msgstr "Biển triều che chở (海潮的庇护)"
+
+msgid "剑幕"
+msgstr "Kiếm màn (剑幕)"
+
+msgid "剑光"
+msgstr "Kiếm quang (剑光)"
+
+msgid "作战分析"
+msgstr "Phân tích tác chiến (作战分析)"
+
+msgid "梦之边境"
+msgstr "Biên giới giấc mơ (梦之边境)"
+
+msgid "装备包"
+msgstr "Túi trang bị (装备包)"
+
+msgid "剑雨感应：生成2张极光剑"
+msgstr "Cảm ứng Mưa kiếm: Tạo 2 Cực quang kiếm (剑雨感应)"
+
+msgid "剑雨赋予其回收"
+msgstr "Mưa kiếm gán Thu hồi (剑雨赋予其回收)"
+
+msgid "缕光芒80%"
+msgstr "Luồng sáng 80% (缕光芒80%)"
+
+msgid "缕光芒216%"
+msgstr "Luồng sáng 216% (缕光芒216%)"
+
+msgid "展开极光70%"
+msgstr "Mở cực quang 70% (展开极光70%)"
+
+msgid "展开极光安息唯一"
+msgstr "Mở cực quang An nghỉ Duy nhất (展开极光安息唯一)"
+
+msgid "展开极光200%"
+msgstr "Mở cực quang 200% (展开极光200%)"
+
+msgid "选取随机3条命运"
+msgstr "Chọn ngẫu nhiên 3 vận mệnh"
+
+msgid "信用点增加"
+msgstr "Tăng Credit (Điểm tín dụng)"
+
+msgid "移除"
+msgstr "Xóa bài (Remove)"
+
+msgid "复制"
+msgstr "Sao chép bài (Copy)"
+
+msgid "咒术卡牌"
+msgstr "Thẻ Chú thuật (Curse)"
+
+msgid "压力"
+msgstr "Áp lực (Stress)"
+
+msgid "丢弃最多2张卡牌"
+msgstr "Vứt bỏ tối đa 2 thẻ bài"
+
+msgid "自身攻击卡牌伤害总量提升30%"
+msgstr "Tăng 30% tổng sát thương bài tấn công của bản thân"
+
+msgid "蚀化臂铠"
+msgstr "Giáp tay ăn mòn (蚀化臂铠)"
+
+msgid "拷问工具箱"
+msgstr "Hộp công cụ tra tấn (拷问工具箱)"
+
+msgid "异象石碑"
+msgstr "Bia đá dị tượng (异象石碑)"
+
+msgid "1"
+msgstr "Tầng 1"
+
+msgid "2"
+msgstr "Tầng 2"
+
+msgid "3"
+msgstr "Tầng 3"
+
+msgid ""
+"PC version requires admin privileges, Please restart this app with admin "
+"privileges!"
+msgstr ""
+"Phiên bản PC yêu cầu quyền Quản trị viên (Administrator). Vui lòng khởi động"
+" lại công cụ với quyền Run as Administrator!"
+
+msgid ""
+"Resolution {resolution} check failed, some tasks might not work correctly!"
+msgstr ""
+"Kiểm tra độ phân giải {resolution} thất bại, một số tính năng có thể hoạt "
+"động không chính xác!"
+
+msgid ""
+"This is a free software. If you purchased this anywhere, request a refund "
+"from the seller."
+msgstr ""
+"Đây là phần mềm hoàn toàn miễn phí mã nguồn mở. Nếu bạn đã mua nó ở bất kỳ "
+"đâu, hãy yêu cầu người bán hoàn tiền ngay lập tức!"
+
+msgid "Are you sure you want to delete {}"
+msgstr "Bạn có chắc chắn muốn xóa {} không?"
+
+msgid "Failed to modify task: cannot delete old task"
+msgstr "Chỉnh sửa nhiệm vụ thất bại: không thể xóa nhiệm vụ cũ"
+
+msgid "Failed to open modify dialog"
+msgstr "Không thể mở hộp thoại chỉnh sửa"
+
+msgid "Failed to save"
+msgstr "Lưu thất bại"
+
+msgid "File Changed Externally"
+msgstr "Tệp đã bị thay đổi từ bên ngoài"
+
+msgid "Invalid Class Name. Must be English characters only."
+msgstr "Tên lớp không hợp lệ. Chỉ được sử dụng ký tự tiếng Anh không dấu."
+
+msgid ""
+"Invalid file name. Use English letters, numbers, underscores, hyphens only."
+msgstr ""
+"Tên tệp không hợp lệ. Chỉ được sử dụng chữ cái tiếng Anh, số, dấu gạch dưới "
+"hoặc gạch nối."
+
+msgid "Invalid relative path. Example: ok_tasks/LabelEnum.py"
+msgstr "Đường dẫn tương đối không hợp lệ. Ví dụ: ok_tasks/LabelEnum.py"
+
+msgid ""
+"Make sure that you trust the script publisher, unverified script can and not"
+" limited to steal your account/ data money, destroy your data, harm/ "
+"controlling your computer."
+msgstr ""
+"Hãy chắc chắn rằng bạn tin tưởng người phát hành tập lệnh. Các tập lệnh chưa"
+" được xác minh có thể đánh cắp tài khoản, phá hủy dữ liệu hoặc gây hại cho "
+"máy tính của bạn."
+
+msgid "Select tasks to export:"
+msgstr "Chọn các nhiệm vụ cần xuất:"
+
+msgid "Select task to copy..."
+msgstr "Chọn nhiệm vụ cần sao chép..."
+
+msgid "Task not found in cache"
+msgstr "Không tìm thấy nhiệm vụ trong bộ nhớ đệm"
+
+msgid "Task rebuilt successfully."
+msgstr "Đã tạo lại nhiệm vụ thành công."
+
+msgid "The current task has unsaved changes. Do you want to save them?"
+msgstr ""
+"Nhiệm vụ hiện tại có thay đổi chưa được lưu. Bạn có muốn lưu lại không?"
+
+msgid ""
+"The file was modified externally. Do you want to overwrite your unsaved "
+"changes?"
+msgstr ""
+"Tệp đã bị thay đổi từ bên ngoài. Bạn có muốn ghi đè lên các thay đổi chưa "
+"lưu không?"
+
+msgid "Warning"
+msgstr "Cảnh báo"
+
+msgid "No capture method available. Please start capture first."
+msgstr ""
+"Chưa có phương thức chụp màn hình nào khả dụng. Vui lòng bấm Bắt đầu kết nối"
+" trước."
+
+msgid "ok_tasks/assets (custom scripts)"
+msgstr "ok_tasks/assets (Tập lệnh tùy chỉnh)"
+
+msgid "assets (standalone app)"
+msgstr "assets (Ứng dụng độc lập)"
+
+msgid "Script Name:"
+msgstr "Tên tập lệnh:"
+
+msgid "Script name is required."
+msgstr "Vui lòng nhập tên tập lệnh."
+
+msgid "Select Script File"
+msgstr "Chọn tệp tập lệnh"
+
+msgid "Task file already exists."
+msgstr "Tệp nhiệm vụ đã tồn tại."
+
+msgid "No tasks to export."
+msgstr "Không có nhiệm vụ nào để xuất."
+
+msgid "OKScript Files (*.okscript);;All Files (*)"
+msgstr "Tệp OKScript (*.okscript);;Tất cả tệp (*)"
+
+msgid "Please select at least one task to export."
+msgstr "Vui lòng chọn ít nhất một nhiệm vụ để xuất."
+
+msgid "Record will override the current script logic. Continue?"
+msgstr "Ghi lại sẽ ghi đè lên logic tập lệnh hiện tại. Tiếp tục?"
+
+msgid "Recording will start when window "
+msgstr "Quá trình ghi sẽ bắt đầu khi cửa sổ "
+
+msgid "Relative path, e.g. ok_tasks/LabelEnum.py"
+msgstr "Đường dẫn tương đối, ví dụ: ok_tasks/LabelEnum.py"
+
+msgid "Right click to copy color"
+msgstr "Nhấp chuột phải để sao chép mã màu"
+
+msgid "Save completed successfully to: {}"
+msgstr "Đã lưu thành công vào: {}"
+
+msgid "Save failed: {e}"
+msgstr "Lưu thất bại: {e}"
+
+msgid "Screenshot failed: {e}"
+msgstr "Chụp ảnh màn hình thất bại: {e}"
+
+msgid "Screenshot saved: {}"
+msgstr "Đã lưu ảnh chụp màn hình: {}"
+
+msgid "Failed to capture frame."
+msgstr "Không thể lấy khung hình ảnh chụp."
+
+msgid "Delete (D)"
+msgstr "Xóa (Phím D)"
+
+msgid "Delete failed: {e}"
+msgstr "Xóa thất bại: {e}"
+
+msgid "Draw (R)"
+msgstr "Vẽ khung (Phím R)"
+
+msgid "Modify (Double Click)"
+msgstr "Chỉnh sửa (Nhấp đúp)"
+
+msgid "Markup Editor"
+msgstr "Trình chỉnh sửa Đánh dấu"
+
+msgid "Name required"
+msgstr "Yêu cầu nhập tên"
+
+msgid "No annotations to save."
+msgstr "Không có ghi chú nào để lưu."
+
+msgid "Bounding Box"
+msgstr "Khung nhận diện"
+
+msgid "Category name"
+msgstr "Tên danh mục"
+
+msgid "Category:"
+msgstr "Danh mục:"
+
+msgid "Width:"
+msgstr "Chiều rộng:"
+
+msgid "Height:"
+msgstr "Chiều cao:"
+
+msgid "Version:"
+msgstr "Phiên bản:"
+
+msgid "Other"
+msgstr "Khác"
+
+msgid "I understand the risks and want to import this script."
+msgstr "Tôi hiểu rõ rủi ro và vẫn muốn nhập tập lệnh này."
+
+msgid "Image deleted."
+msgstr "Đã xóa hình ảnh."
+
+msgid "Import failed"
+msgstr "Nhập thất bại"
+
+msgid "Already exists in "
+msgstr "Đã tồn tại trong "
+
+msgid "Are you sure you want to delete the script "
+msgstr "Bạn có chắc chắn muốn xóa tập lệnh "
+
+msgid "Waiting for {task_name} task to be completed"
+msgstr "Đang chờ nhiệm vụ {task_name} hoàn thành"
+
+msgid "Actions"
+msgstr "Hành động"
+
+msgid "Alert"
+msgstr "Cảnh báo"
+
+msgid "Browse"
+msgstr "Duyệt tìm..."
+
+msgid "Cancel"
+msgstr "Hủy"
+
+msgid "Clear"
+msgstr "Xóa"
+
+msgid "Close"
+msgstr "Đóng"
+
+msgid "Completed"
+msgstr "Đã hoàn thành"
+
+msgid "Confirm"
+msgstr "Xác nhận"
+
+msgid "Delete"
+msgstr "Xóa"
+
+msgid "Disabled"
+msgstr "Tắt"
+
+msgid "Edit"
+msgstr "Chỉnh sửa"
+
+msgid "Enabled"
+msgstr "Bật"
+
+msgid "Error"
+msgstr "Lỗi"
+
+msgid "Info"
+msgstr "Thông tin"
+
+msgid "No"
+msgstr "Tắt / Không"
+
+msgid "OK"
+msgstr "Đồng ý"
+
+msgid "Pause"
+msgstr "Tạm dừng"
+
+msgid "Refresh"
+msgstr "Làm mới"
+
+msgid "Resume"
+msgstr "Tiếp tục"
+
+msgid "Running"
+msgstr "Đang chạy"
+
+msgid "Save"
+msgstr "Lưu"
+
+msgid "Start"
+msgstr "Bắt đầu"
+
+msgid "Status"
+msgstr "Trạng thái"
+
+msgid "Stop"
+msgstr "Dừng"
+
+msgid "Stopped"
+msgstr "Đã dừng"
+
+msgid "Success"
+msgstr "Thành công"
+
+msgid "Version Update"
+msgstr "Cập nhật Phiên bản"
+
+msgid "Yes"
+msgstr "Bật / Có"
+
+msgid "{key} is invalid, please check the hotkey config!"
+msgstr "Phím {key} không hợp lệ, vui lòng kiểm tra cấu hình phím tắt!"
+
+msgid "About"
+msgstr "Giới thiệu"
+
+msgid "Capture"
+msgstr "Bắt đầu & Kết nối"
+
+msgid "Capture Error"
+msgstr "Lỗi chụp màn hình"
+
+msgid "Debug"
+msgstr "Gỡ lỗi & Nhà phát triển"
+
+msgid "Do you want to exit the application?"
+msgstr "Bạn có chắc chắn muốn thoát ứng dụng không?"
+
+msgid "Do you want to restart the application?"
+msgstr "Bạn có muốn khởi động lại ứng dụng không?"
+
+msgid "Exit"
+msgstr "Thoát"
+
+msgid "Guide"
+msgstr "Hướng dẫn sử dụng"
+
+msgid "Home"
+msgstr "Trang chủ"
+
+msgid "Hướng dẫn"
+msgstr "Hướng dẫn sử dụng"
+
+msgid "Minimize to Tray"
+msgstr "Thu nhỏ xuống khay hệ thống"
+
+msgid "One Time Tasks"
+msgstr "Nhiệm vụ Một lần"
+
+msgid "Pause Success."
+msgstr "Tạm dừng thành công."
+
+msgid "Please check whether the game window is selected correctly!"
+msgstr "Vui lòng kiểm tra xem đã chọn đúng cửa sổ game hay chưa!"
+
+msgid "Restart"
+msgstr "Khởi động lại"
+
+msgid "Run Code"
+msgstr "Chạy mã Python"
+
+msgid "Schedule"
+msgstr "Lập lịch"
+
+msgid "Script"
+msgstr "Tập lệnh (Script)"
+
+msgid "Settings"
+msgstr "Cài đặt"
+
+msgid "Show Window"
+msgstr "Hiện cửa sổ"
+
+msgid "Start Success."
+msgstr "Bắt đầu thành công."
+
+msgid "Tasks"
+msgstr "Nhiệm vụ"
+
+msgid "Templates"
+msgstr "Mẫu hình ảnh"
+
+msgid "Trigger Tasks"
+msgstr "Nhiệm vụ Tự động"
+
+msgid "Triggers"
+msgstr "Tự động (Triggers)"
+
+msgid ", the supported min resolution is {min_size}"
+msgstr ", độ phân giải tối thiểu được hỗ trợ là {min_size}"
+
+msgid ", the supported ratio is {supported_ratio}"
+msgstr ", tỉ lệ khung hình hỗ trợ là {supported_ratio}"
+
+msgid "Can't start game, make sure the game is installed"
+msgstr "Không thể khởi động game, hãy đảm bảo game đã được cài đặt trên máy"
+
+msgid "Capture failed, please check game window"
+msgstr "Chụp màn hình thất bại, vui lòng kiểm tra lại cửa sổ game"
+
+msgid "Emulator is not connected, start the emulator first!"
+msgstr "Chưa kết nối phần mềm giả lập, vui lòng khởi động giả lập trước!"
+
+msgid "GPU Driver Warning"
+msgstr "Cảnh báo Trình điều khiển (Driver) Card đồ họa"
+
+msgid "Game path does not exist, Please open game manually!"
+msgstr "Đường dẫn game không tồn tại, vui lòng mở game thủ công!"
+
+msgid "No game selected!"
+msgstr "Chưa chọn cửa sổ game!"
+
+msgid "Selected capture method is not supported by the game or your system!"
+msgstr ""
+"Phương thức chụp màn hình đã chọn không được game hoặc hệ điều hành hỗ trợ!"
+
+msgid "Start game failed, please start game first"
+msgstr "Khởi động game thất bại, vui lòng tự mở game trước"
+
+msgid "Start game timeout!"
+msgstr "Quá thời gian chờ khởi động game!"
+
+msgid "{vendor} {feature} is enabled and may cause malfunctions!"
+msgstr ""
+"{vendor} {feature} đang được bật và có thể gây lỗi nhận diện hình ảnh!"
+
+msgid "{} is not connected, please select the game window."
+msgstr "{} chưa được kết nối, vui lòng chọn cửa sổ game."
+
+msgid "Android"
+msgstr "Bản Android"
+
+msgid "Browser"
+msgstr "Trình duyệt"
+
+msgid "Capture Method"
+msgstr "Phương thức chụp màn hình"
+
+msgid "Choose Interaction"
+msgstr "Chọn phương thức thao tác"
+
+msgid "Choose Window"
+msgstr "Chọn cửa sổ"
+
+msgid "Connected"
+msgstr "Đã kết nối"
+
+msgid "Debug Overlay"
+msgstr "Cửa sổ nổi gỡ lỗi"
+
+msgid "Disable Boxes"
+msgstr "Tắt khung đánh dấu"
+
+msgid "Disconnected"
+msgstr "Đã ngắt kết nối"
+
+msgid "Emulator"
+msgstr "Giả lập (Emulator)"
+
+msgid "Enable Boxes"
+msgstr "Bật khung đánh dấu"
+
+msgid "Export Logs"
+msgstr "Xuất nhật ký (Logs)"
+
+msgid "Export failed"
+msgstr "Xuất nhật ký thất bại"
+
+msgid "Hide Log on Overlay"
+msgstr "Ẩn nhật ký trên màn hình nổi"
+
+msgid "Install Folder"
+msgstr "Thư mục cài đặt"
+
+msgid "Log Folder"
+msgstr "Thư mục nhật ký"
+
+msgid "Open Logs"
+msgstr "Mở nhật ký"
+
+msgid "PC"
+msgstr "Bản PC"
+
+msgid "Please Start First"
+msgstr "Vui lòng bấm Bắt đầu trước"
+
+msgid "Refreshing"
+msgstr "Đang làm mới"
+
+msgid "Screenshot Folder"
+msgstr "Thư mục ảnh chụp"
+
+msgid "Search title or exe..."
+msgstr "Tìm kiếm tiêu đề hoặc tệp exe..."
+
+msgid "Show Log on Overlay"
+msgstr "Hiện nhật ký trên màn hình nổi"
+
+msgid "View Log"
+msgstr "Xem nhật ký"
+
+msgid "Game Window Disconnected"
+msgstr "Mất kết nối với cửa sổ game"
+
+msgid "Paused: PC Game Window Must Be in Front!"
+msgstr "Đã tạm dừng: Cửa sổ game bản PC phải ở phía trước (tiền cảnh)!"
+
+msgid "Start Game"
+msgstr "Khởi động Game"
+
+msgid "Waiting for task to be enabled"
+msgstr "Nhấp để chọn nhiệm vụ bắt đầu"
+
+msgid "Pause All"
+msgstr "Tạm dừng tất cả"
+
+msgid "Start All"
+msgstr "Bắt đầu tất cả"
+
+msgid "ADB(Supports Background, Slow, High Compatibility, High Latency)"
+msgstr "ADB (Hỗ trợ chạy nền, độ tương thích cao, độ trễ cao)"
+
+msgid "Browser Capture"
+msgstr "Chụp cửa sổ trình duyệt"
+
+msgid "Game Window"
+msgstr "Cửa sổ Game"
+
+msgid "Ipc (MuMuPlayer12 version >= 4.0)"
+msgstr "Ipc (MuMuPlayer12 phiên bản >= 4.0)"
+
+msgid "ADBInteraction"
+msgstr "Thao tác ADB"
+
+msgid "BrowserInteraction"
+msgstr "Thao tác trình duyệt"
+
+msgid "Default Interaction"
+msgstr "Thao tác mặc định"
+
+msgid "WindowsInteraction"
+msgstr "Thao tác Windows"
+
+msgid "Loading"
+msgstr "Đang tải"
+
+msgid "Starting, timeout after {seconds_left} seconds."
+msgstr "Đang khởi động, sẽ hết thời gian sau {seconds_left} giây."
+
+msgid "Instructions"
+msgstr "Hướng dẫn sử dụng"
+
+msgid "Disable"
+msgstr "Tắt"
+
+msgid "Enable"
+msgstr "Bật"
+
+msgid "Create Task"
+msgstr "Tạo nhiệm vụ"
+
+msgid "Time Elapsed"
+msgstr "Thời gian đã chạy"
+
+msgid "Value"
+msgstr "Giá trị"
+
+msgid "Are you sure you want to delete the script \"{}\"?"
+msgstr "Bạn có chắc chắn muốn xóa script \"{}\" không?"
+
+msgid "Confirm Delete"
+msgstr "Xác nhận xóa"
+
+msgid "Delete Script"
+msgstr "Xóa script"
+
+msgid "App Config"
+msgstr "Cấu hình Ứng dụng"
+
+msgid "Application Theme"
+msgstr "Giao diện Ứng dụng"
+
+msgid "Change the appearance of the application"
+msgstr "Thay đổi chủ đề màu sắc giao diện của ứng dụng"
+
+msgid "Configuration takes effect after restart"
+msgstr "Cấu hình sẽ có hiệu lực sau khi khởi động lại ứng dụng"
+
+msgid "Dark"
+msgstr "Giao diện Tối"
+
+msgid "Language"
+msgstr "Ngôn ngữ"
+
+msgid "Light"
+msgstr "Giao diện Sáng"
+
+msgid "Set your preferred language"
+msgstr "Chọn ngôn ngữ hiển thị bạn muốn sử dụng"
+
+msgid "Updated successfully"
+msgstr "Cập nhật thành công"
+
+msgid "Use system setting"
+msgstr "Theo cài đặt hệ thống"
+
+msgid "Arknights: Endfield"
+msgstr "Arknights: Endfield (明日方舟：终末地)"
+
+msgid "Beta Version"
+msgstr "Bản Thử nghiệm (Beta)"
+
+msgid "Chaos Zero Nightmare"
+msgstr "Chaos Zero Nightmare (卡厄思梦境)"
+
+msgid "Check for updates"
+msgstr "Kiểm tra cập nhật"
+
+msgid "Downgrade success {from_version} -> {to_version}"
+msgstr "Hạ cấp thành công {from_version} -> {to_version}"
+
+msgid "Download Debug"
+msgstr "Tải bản Thử nghiệm (Debug)"
+
+msgid "Download Error:"
+msgstr "Lỗi tải xuống: "
+
+msgid "Download Release"
+msgstr "Tải bản Chính thức (Release)"
+
+msgid "Duet Night Abyss"
+msgstr "Duet Night Abyss (二重螺旋)"
+
+msgid "Girls' Frontline 2"
+msgstr "Girls' Frontline 2 (少前2)"
+
+msgid "Neverness to Everness"
+msgstr "Neverness to Everness (异环)"
+
+msgid "Onmyoji"
+msgstr "Onmyoji (阴阳师)"
+
+msgid "Other Projects"
+msgstr "Dự án liên quan"
+
+msgid "Stable Version"
+msgstr "Bản Chính thức (Stable)"
+
+msgid "Star Resonance"
+msgstr "Star Resonance (星痕共鸣)"
+
+msgid "Update success {from_version} -> {to_version}"
+msgstr "Cập nhật thành công {from_version} -> {to_version}"
+
+msgid "Wuthering Waves"
+msgstr "Wuthering Waves (鸣潮)"
+
+msgid "ok-py Automation Tool"
+msgstr "Công cụ Tự động ok-py"
+
+msgid "ok-script App Template"
+msgstr "Mẫu ứng dụng ok-script"
+
+msgid "All Levels"
+msgstr "Mọi cấp độ"
+
+msgid "Drag"
+msgstr "Kéo"
+
+msgid "Filter logs..."
+msgstr "Lọc nhật ký..."
+
+msgid "Pin"
+msgstr "Ghim lên trên"
+
+msgid "Unpin"
+msgstr "Bỏ ghim"
+
+msgid "Waiting for ok-script.log"
+msgstr "Đang chờ nhật ký ok-script.log"
+
+msgid "records"
+msgstr "dòng"
+
+msgid "Discord"
+msgstr "Discord"
+
+msgid "FAQ"
+msgstr "Câu hỏi thường gặp (FAQ)"
+
+msgid "GitHub"
+msgstr "GitHub"
+
+msgid "Share"
+msgstr "Chia sẻ"
+
+msgid "Share Link copied to clipboard"
+msgstr "Liên kết chia sẻ đã được sao chép vào clipboard"
+
+msgid "Sponsor"
+msgstr "Ủng hộ (Tài trợ)"
+
+msgid "Are you sure you want to update to {version} {type}?"
+msgstr "Bạn có chắc chắn muốn cập nhật lên {version} {type} không?"
+
+msgid "Check for update error!"
+msgstr "Lỗi kiểm tra cập nhật!"
+
+msgid "Checking for updates"
+msgstr "Đang kiểm tra cập nhật..."
+
+msgid "Downloading {progress} {percent}%"
+msgstr "Đang tải xuống: {progress} {percent}%"
+
+msgid "Found new version!"
+msgstr "Đã tìm thấy phiên bản mới!"
+
+msgid "Release"
+msgstr "Bản chính thức"
+
+msgid "This is the newest version!"
+msgstr "Hiện tại đã là phiên bản mới nhất!"
+
+msgid "Update Now"
+msgstr "Cập nhật ngay"
+
+msgid "Update to {version} {type}"
+msgstr "Cập nhật lên {version} {type}"
+
+msgid "Add"
+msgstr "Thêm"
+
+msgid "Please input item"
+msgstr "Vui lòng nhập nội dung mục"
+
+msgid "Remove"
+msgstr "Xóa"
+
+msgid "Go to Config"
+msgstr "Đi đến Cài đặt"
+
+msgid "All Files (*)"
+msgstr "Tất cả tệp (*)"
+
+msgid "(0 = disabled)"
+msgstr "(0 = tắt)"
+
+msgid "24h"
+msgstr "24 Giờ"
+
+msgid "Are you sure you want to delete task"
+msgstr "Bạn có chắc chắn muốn xóa lịch nhiệm vụ này không"
+
+msgid "Auto exit after task done (-e)"
+msgstr "Tự động thoát sau khi hoàn thành (-e)"
+
+msgid "Create"
+msgstr "Tạo mới"
+
+msgid "Create Schedule Task"
+msgstr "Tạo lịch chạy nhiệm vụ"
+
+msgid "Current App"
+msgstr "Ứng dụng hiện tại"
+
+msgid "Custom Interval"
+msgstr "Khoảng thời gian tùy chỉnh"
+
+msgid "Days"
+msgstr "Ngày"
+
+msgid "Failed to create task"
+msgstr "Tạo nhiệm vụ thất bại"
+
+msgid "Failed to delete task"
+msgstr "Xóa nhiệm vụ thất bại"
+
+msgid "Failed to load tasks"
+msgstr "Không thể tải danh sách nhiệm vụ"
+
+msgid "Failed to modify task"
+msgstr "Chỉnh sửa nhiệm vụ thất bại"
+
+msgid "Failed to toggle task"
+msgstr "Bật/tắt nhiệm vụ thất bại"
+
+msgid "Hour"
+msgstr "Giờ"
+
+msgid "Hours"
+msgstr "Giờ"
+
+msgid "Minute"
+msgstr "Phút"
+
+msgid "Modify Schedule Task"
+msgstr "Chỉnh sửa lịch chạy nhiệm vụ"
+
+msgid "Next Run"
+msgstr "Lần chạy tiếp theo"
+
+msgid "No tasks available"
+msgstr "Không có nhiệm vụ nào"
+
+msgid "Refresh failed"
+msgstr "Làm mới thất bại"
+
+msgid "Select Task"
+msgstr "Chọn nhiệm vụ"
+
+msgid "Start Time"
+msgstr "Thời gian bắt đầu"
+
+msgid "Startup Options"
+msgstr "Tùy chọn khởi động"
+
+msgid "Task Index (-t)"
+msgstr "Chỉ số nhiệm vụ (-t)"
+
+msgid "Task Name"
+msgstr "Tên nhiệm vụ"
+
+msgid "Task Schedule"
+msgstr "Lập lịch nhiệm vụ"
+
+msgid "Task created successfully"
+msgstr "Tạo lịch nhiệm vụ thành công"
+
+msgid "Task deleted successfully"
+msgstr "Xóa lịch nhiệm vụ thành công"
+
+msgid "Task disabled"
+msgstr "Đã tắt lịch nhiệm vụ"
+
+msgid "Task enabled"
+msgstr "Đã bật lịch nhiệm vụ"
+
+msgid "Task modified successfully"
+msgstr "Chỉnh sửa lịch nhiệm vụ thành công"
+
+msgid "Tasks refreshed"
+msgstr "Đã làm mới danh sách lịch"
+
+msgid "Timeout"
+msgstr "Hết thời gian"
+
+msgid "Trigger Type"
+msgstr "Loại kích hoạt"
+
+msgid "hours (0 = unlimited)"
+msgstr "giờ (0 = không giới hạn)"
+
+msgid "Call"
+msgstr "Gọi"
+
+msgid "Capture Screenshot"
+msgstr "Chụp màn hình"
+
+msgid "Capture Success"
+msgstr "Chụp ảnh màn hình thành công"
+
+msgid "Capture returned None"
+msgstr "Chụp ảnh màn hình trả về rỗng"
+
+msgid "Convert i18n files"
+msgstr "Biên dịch tệp i18n"
+
+msgid "Debug Task Function"
+msgstr "Gọi hàm Task"
+
+msgid "Debug Tool"
+msgstr "Công cụ gỡ lỗi"
+
+msgid "Drop or Select Screenshot"
+msgstr "Kéo thả hoặc chọn ảnh chụp màn hình"
+
+msgid "Dump Threads(HotKey:Ctrl+Alt+D)"
+msgstr "Dump Threads (Phím tắt: Ctrl+Alt+D)"
+
+msgid "Generate i18n files"
+msgstr "Tạo tệp i18n"
+
+msgid "No Capture Available or Selected"
+msgstr "Không có phương thức chụp màn hình khả dụng hoặc chưa chọn"
+
+msgid "No OCR configured"
+msgstr "Chưa cấu hình OCR"
+
+msgid "No such attr: {func_name}"
+msgstr "Không có thuộc tính hoặc phương thức: {func_name}"
+
+msgid "OCR success: {result}"
+msgstr "Nhận diện OCR thành công: {result}"
+
+msgid "Select Screenshots"
+msgstr "Chọn ảnh chụp màn hình"
+
+msgid "Type a function or property"
+msgstr "Nhập tên phương thức hoặc thuộc tính"
+
+msgid "call success: {result}"
+msgstr "Gọi hàm thành công: {result}"
+
+msgid "{num} images selected"
+msgstr "Đã chọn {num} hình ảnh"
+
+msgid "Enter Python code here..."
+msgstr "Nhập mã Python tại đây..."
+
+msgid "Output will be shown here..."
+msgstr "Kết quả thực thi sẽ hiển thị ở đây..."
+
+msgid "Run Python Code"
+msgstr "Chạy mã Python"
+
+msgid "Choose Task:"
+msgstr "Chọn nhiệm vụ:"
+
+msgid "Class Name (English only)"
+msgstr "Tên lớp (Chỉ dùng tiếng Anh)"
+
+msgid "Control"
+msgstr "Điều khiển"
+
+msgid "Copy Task"
+msgstr "Sao chép nhiệm vụ"
+
+msgid "Create New Task"
+msgstr "Tạo nhiệm vụ mới"
+
+msgid "Description (Optional)"
+msgstr "Mô tả (Tùy chọn)"
+
+msgid "Display name for the script"
+msgstr "Tên hiển thị cho tập lệnh"
+
+msgid "English, numbers and valid filename chars only"
+msgstr "Chỉ dùng chữ cái tiếng Anh, chữ số và ký tự hợp lệ"
+
+msgid "Export"
+msgstr "Xuất"
+
+msgid "Export Script"
+msgstr "Xuất tập lệnh"
+
+msgid "File"
+msgstr "Tệp tin"
+
+msgid "File Name:"
+msgstr "Tên tệp:"
+
+msgid "Import Script"
+msgstr "Nhập tập lệnh"
+
+msgid "Key"
+msgstr "Bàn phím"
+
+msgid "Logging"
+msgstr "Ghi nhật ký"
+
+msgid "Loop infinitely"
+msgstr "Lặp vô hạn"
+
+msgid "Loop x times"
+msgstr "Lặp số lần quy định"
+
+msgid "Mouse"
+msgstr "Chuột"
+
+msgid "No loop"
+msgstr "Không lặp"
+
+msgid "OCR"
+msgstr "Nhận diện chữ (OCR)"
+
+msgid "Record"
+msgstr "Ghi hình"
+
+msgid "Run"
+msgstr "Chạy thử"
+
+msgid "Save Changes"
+msgstr "Lưu thay đổi"
+
+msgid "Script exported successfully to Downloads folder."
+msgstr "Đã xuất tập lệnh vào thư mục Downloads."
+
+msgid "Search templates..."
+msgstr "Tìm kiếm mẫu..."
+
+msgid "Task Name is required."
+msgstr "Cần nhập tên nhiệm vụ."
+
+msgid "Task copied successfully."
+msgstr "Đã sao chép nhiệm vụ thành công."
+
+msgid "Task created successfully."
+msgstr "Đã tạo nhiệm vụ thành công."
+
+msgid "Task deleted successfully."
+msgstr "Đã xóa nhiệm vụ thành công."
+
+msgid "Template Matching"
+msgstr "Khớp mẫu hình ảnh"
+
+msgid "Window"
+msgstr "Cửa sổ"
+
+msgid "Generate label enum file"
+msgstr "Tạo tệp Enum nhãn"
+
+msgid "Markup"
+msgstr "Gán nhãn"
+
+msgid "No templates yet"
+msgstr "Chưa có mẫu hình ảnh nào"
+
+msgid "Save To"
+msgstr "Lưu vào"
+
+msgid "Screenshot"
+msgstr "Chụp màn hình"
+
+msgid "Search by name or category..."
+msgstr "Tìm theo tên hoặc danh mục..."
+
+msgid "Take Screenshot"
+msgstr "Chụp ảnh màn hình mới"
+
+msgid "Another instance is already running"
+msgstr ""
+"Một phiên bản khác của công cụ đang chạy, vui lòng tắt phiên bản đó trước."
+
+msgid "Auto"
+msgstr "Tự động"
+
+msgid "Auto Resize Game Window"
+msgstr "Tự động điều chỉnh độ phân giải cửa sổ game"
+
+msgid "Auto Start Game"
+msgstr "Tự động khởi động Game"
+
+msgid "Auto Start Game When App Starts"
+msgstr "Tự động bật game khi khởi động công cụ"
+
+msgid "Auto exit because game exited"
+msgstr "Tự động đóng do game đã thoát"
+
+msgid "Basic Options"
+msgstr "Tùy chọn cơ bản"
+
+msgid "Blur"
+msgstr "Làm mờ (Blur)"
+
+msgid "Blur Algorithm"
+msgstr "Thuật toán che phủ"
+
+msgid "Blur Game UID etc to enhance OLED life"
+msgstr "Làm mờ UID game và vùng cố định để bảo vệ màn hình OLED và bảo mật"
+
+msgid "Capture Frame Rate"
+msgstr "Tốc độ chụp màn hình (FPS)"
+
+msgid "Capture Latency"
+msgstr "Độ trễ chụp màn hình"
+
+msgid "China"
+msgstr "Nội địa (Trung Quốc)"
+
+msgid "Configure notification providers"
+msgstr "Cấu hình các dịch vụ gửi thông báo"
+
+msgid "Discord Notification"
+msgstr "Thông báo Discord"
+
+msgid "Discord Webhook"
+msgstr "Discord Webhook URL"
+
+msgid "Discord channel webhook URL"
+msgstr "Địa chỉ Webhook kênh Discord"
+
+msgid "Enable Blur"
+msgstr "Bật làm mờ che thông tin"
+
+msgid "Exit After Task"
+msgstr "Thoát sau khi xong việc"
+
+msgid "Exit App when Game Exits"
+msgstr "Thoát ứng dụng khi game thoát"
+
+msgid "Exit because game exited"
+msgstr "Ứng dụng tự động thoát do game đã đóng!"
+
+msgid "Exit the Game and the App after Successfully Executing the Task"
+msgstr "Thoát cả Game và Ứng dụng sau khi thực hiện xong nhiệm vụ"
+
+msgid "Exit_After_Execution"
+msgstr "Thoát sau khi chạy xong"
+
+msgid "Frame Count"
+msgstr "Tổng số khung hình"
+
+msgid "Game Resolution"
+msgstr "Độ phân giải cửa sổ"
+
+msgid "Game Sound"
+msgstr "Âm thanh game"
+
+msgid "Global"
+msgstr "Quốc tế (Global)"
+
+msgid ""
+"Increase Delay between Trigger Tasks to Reduce CPU/GPU Usage(Milliseconds)"
+msgstr ""
+"Tăng độ trễ giữa các nhiệm vụ tự động để giảm tiêu thụ CPU/GPU (mili-giây)"
+
+msgid "Inpaint"
+msgstr "Lấp đầy nội dung (Inpaint)"
+
+msgid "Install dir {path} must be an English path, move to another path."
+msgstr ""
+"Thư mục cài đặt \"{path}\" chứa ký tự có dấu hoặc khoảng trắng đặc biệt. Vui"
+" lòng di chuyển thư mục sang đường dẫn chỉ chứa chữ tiếng Anh không dấu (ví "
+"dụ: D:\\ok-kes) để tránh lỗi thư viện OCR."
+
+msgid "Launch with DX11"
+msgstr "Khởi chạy với DirectX 11"
+
+msgid "Memory"
+msgstr "Bộ nhớ (RAM)"
+
+msgid "Method used to obscure configured areas"
+msgstr "Phương pháp được sử dụng để che các khu vực đã cấu hình"
+
+msgid "Minimize Window to System Tray when Closing"
+msgstr "Thu nhỏ xuống khay hệ thống khi bấm nút đóng"
+
+msgid "Mute Game while in Background"
+msgstr "Tắt tiếng game khi ở chế độ nền"
+
+msgid "New Version {} Available"
+msgstr "Có phiên bản mới {} có thể cập nhật!"
+
+msgid "Notification"
+msgstr "Thông báo"
+
+msgid "OCR Latency"
+msgstr "Độ trễ nhận diện OCR"
+
+msgid "Paused because game exited"
+msgstr "Đã tạm dừng: Game đã bị đóng!"
+
+msgid "Paused because game window is minimized or out of screen!"
+msgstr "Đã tạm dừng: Cửa sổ game đang bị thu nhỏ hoặc nằm ngoài màn hình!"
+
+msgid "Performance Test"
+msgstr "Kiểm tra hiệu năng"
+
+msgid "Process Frame Rate"
+msgstr "Tốc độ xử lý (FPS)"
+
+msgid "Send notifications to a Discord webhook"
+msgstr "Gửi thông báo tới Discord Webhook"
+
+msgid "Show notifications using the Windows system tray"
+msgstr "Hiển thị thông báo qua khay hệ thống Windows"
+
+msgid "Successfully Executed Task, Exiting Game and App!"
+msgstr "Đã thực hiện xong nhiệm vụ, đang thoát Game và Ứng dụng!"
+
+msgid "Switch between different Windows capture methods"
+msgstr "Chuyển đổi giữa các phương thức chụp màn hình Windows khác nhau"
+
+msgid "System Notification"
+msgstr "Thông báo hệ thống"
+
+msgid "Telegram Bot Token"
+msgstr "Telegram Bot Token"
+
+msgid "Telegram Chat ID"
+msgstr "Telegram Chat ID"
+
+msgid "Telegram Notification"
+msgstr "Thông báo Telegram"
+
+msgid "Texts"
+msgstr "Kết quả nhận diện văn bản (OCR)"
+
+msgid "Trigger Interval"
+msgstr "Khoảng thời gian kích hoạt"
+
+msgid "Use DirectML"
+msgstr "Sử dụng DirectML"
+
+msgid "Use GPU to Improve Performance"
+msgstr "Nếu bạn có card đồ họa VRAM lớn, chọn 'Bật' để tăng tốc hiệu năng"
+
+msgid "Window Config"
+msgstr "Cài đặt Cửa sổ"
+
+msgid "Windows Capture"
+msgstr "Phương thức chụp màn hình Windows"
+
+msgid "ONNX Runtime"
+msgstr "ONNX Runtime (Khuyên dùng)"
+
+msgid "OpenVINO"
+msgstr "OpenVINO (Intel)"
+
+msgid "QQ Group"
+msgstr "Nhóm QQ"
+
+msgid "QQ Channel"
+msgstr "Kênh QQ"
+
+msgid ""
+"Image resource load failed, please try install again.(Don't install in "
+"OneDrive or directory containing Chinese or space)"
+msgstr ""
+"Tải tài nguyên hình ảnh thất bại, vui lòng cài đặt lại. (Không cài đặt trong"
+" thư mục OneDrive hoặc đường dẫn chứa tiếng Việt có dấu, chữ Trung Quốc hay "
+"khoảng trắng)"
+
+msgid "Path is relative to the workspace root."
+msgstr "Đường dẫn tương đối so với thư mục gốc của không gian làm việc."
+
+msgid "Are you sure you want to delete "
+msgstr "Bạn có chắc chắn muốn xóa "
+
+msgid "Box"
+msgstr "Khung nhận diện"
+
+msgid "ADB"
+msgstr "Giả lập / ADB"
+
+msgid "DebugTab"
+msgstr "Gỡ lỗi"
+
+msgid "Can"
+msgstr "Có thể"

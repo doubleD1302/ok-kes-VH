@@ -8,6 +8,7 @@ class StoryMode(TriggerTask):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.name = "半自动剧情模式"
+        self.description = "Tự động tua lời thoại cốt truyện và chuyển tiếp các phân cảnh hội thoại"
         self.instructions = """<b>Chế độ Bán tự động Cốt truyện (Story Mode):</b><br><br>
 1. <b>Cách bật:</b> Bật khi đang ở các phân cảnh hội thoại hoặc bản đồ cốt truyện để tự động tua nhanh lời thoại.<br>
 2. <b>Khi gặp ải chiến đấu:</b> Chọn người thủ công hoặc chuyển sang bật [Tự động Xuất kích] để bot tự đánh.<br>

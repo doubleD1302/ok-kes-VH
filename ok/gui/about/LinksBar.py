@@ -31,12 +31,12 @@ class LinksBar(QWidget):
             self.layout.addWidget(self.discord_button, alignment=Qt.AlignRight, stretch=0)
 
         if self.get_url('qq_group'):
-            self.github_button = PushButton("QQ群", icon=FluentIcon.CHAT)
+            self.github_button = PushButton(self.tr("QQ Group"), icon=FluentIcon.CHAT)
             self.github_button.clicked.connect(lambda: self.open_url('qq_group'))
             self.layout.addWidget(self.github_button, alignment=Qt.AlignRight, stretch=0)
 
         if self.get_url('qq_channel'):
-            self.github_button = PushButton("QQ频道", icon=FluentIcon.CHAT)
+            self.github_button = PushButton(self.tr("QQ Channel"), icon=FluentIcon.CHAT)
             self.github_button.clicked.connect(lambda: self.open_url('qq_channel'))
             self.layout.addWidget(self.github_button, alignment=Qt.AlignRight, stretch=0)
 

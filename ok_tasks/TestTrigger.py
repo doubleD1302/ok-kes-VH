@@ -9,7 +9,8 @@ class TestTrigger(TriggerTask):
         self.name = "测试trigger"
         self.description = "测试trigger"
         self.trigger_interval = 2
-        self.instructions = """<a href="https://github.com/ok-oldking/ok-py">ok-py</a>"""
+        self.instructions = """<b>Nhiệm vụ Xử lý Kẻ địch bí mật:</b><br><br>
+Tự động phát hiện và xử lý tương tác khi chạm trán Kẻ địch bí mật trong ải."""
 
     def run(self):
         self.all_texts = self.ocr()

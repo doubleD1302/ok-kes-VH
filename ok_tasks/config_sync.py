@@ -397,7 +397,7 @@ def show_hot_configs_dialog(task: TriggerTask, mode: str):
         lang_filter_combo.addItem("Tất cả", "")
         langs = sorted(set(r.get("game_lang", "简体中文") for r in all_results if r.get("game_lang")))
         for lang in langs:
-            lang_filter_combo.addItem(lang, lang)
+            lang_filter_combo.addItem(og.app.tr(lang), lang)
         idx = lang_filter_combo.findData(current_lang)
         if idx >= 0:
             lang_filter_combo.setCurrentIndex(idx)
@@ -410,7 +410,7 @@ def show_hot_configs_dialog(task: TriggerTask, mode: str):
             member_filter_combo.addItem("Tất cả", "")
             members = sorted(set(r.get("first_member", "") for r in all_results if r.get("first_member")))
             for m in members:
-                member_filter_combo.addItem(m, m)
+                member_filter_combo.addItem(og.app.tr(m), m)
             # 恢复之前选择的筛选项
             idx = member_filter_combo.findData(current_member)
             if idx >= 0:
@@ -438,8 +438,8 @@ def show_hot_configs_dialog(task: TriggerTask, mode: str):
             wr = r["avg_win_rate"]
             uc = r["user_count"]
             ver = r.get("config_ver", "?")
-            gl = r.get("game_lang", "简体中文")
-            fm = r.get("first_member", "")
+            gl = og.app.tr(r.get("game_lang", "简体中文"))
+            fm = og.app.tr(r.get("first_member", ""))
             if fm:
                 member_label = "Đặc vụ" if mode == "sortie" else "Đặc vụ cày file lưu"
                 text = f"#{i}  Tỷ lệ thắng: {wr:.0%}  Số người dùng: {uc}  {member_label}: {fm}  Ngôn ngữ: {gl}  Phiên bản: {ver}"

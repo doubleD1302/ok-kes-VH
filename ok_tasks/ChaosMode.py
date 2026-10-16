@@ -21,6 +21,7 @@ class ChaosMode(TriggerTask):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.name = "自动卡厄思模式"
+        self.description = "Tự động Khiêu chiến Kaos: cày file lưu TB, trị liệu sụp đổ, xóa bài Delang và săn thẻ thần"
         self.instructions = """<b>Chế độ Tự động Kaos (Auto Chaos):</b><br><br>
 1. <b>Cách bật:</b> Xếp sẵn đội hình 3 người trong game, điền tên chủ lực vào [Đặc vụ cày file lưu], vào giao diện ải Kaos rồi gạt công tắc BẬT.<br>
 2. <b>Tính năng:</b> Tự động trị liệu sụp đổ tinh thần, xóa bản lưu dưới mức TB quy định, vào shop Delang xóa bài.<br>
@@ -89,6 +90,12 @@ class ChaosMode(TriggerTask):
             "deck": {},
         }
 
+        all_members = ["海德玛丽", "九", "力", "绯", "米卡", "尼娅", "蒂菲拉", "麦格纳", "卡修斯", "黛安娜", "阿黛尔海特"]
+        all_cards = ["展开极光", "解放极光", "极光剑", "凝聚极光", "剑雨", "一缕光芒", "缕光芒", "万众英雄", "水之源", "水之伞", "海潮的庇护", "剑幕", "剑光", "作战分析", "梦之边境"]
+        all_routes = ["休息", "事件", "小怪", "精英"]
+        all_tasks = ["选取随机3条命运", "信用点增加", "移除", "复制", "咒术卡牌", "压力"]
+        all_equipments = ["蚀化臂铠", "拷问工具箱", "异象石碑"]
+
         self._last_upload_time = 0
         self.config_type = {
             '游戏语言': {'type': 'drop_down', 'options': ['简体中文', '繁体中文']},
@@ -104,6 +111,18 @@ class ChaosMode(TriggerTask):
             },
             '第几层boss前自动暂停': {'type': 'drop_down', 'options': ['不暂停', '1', '2']},
             '存储数据保存上限大于多少': {'min': 0, 'max': 170},
+            '刷存档主战员': {'type': 'drop_down', 'options': all_members},
+            '需要冥想的卡牌': {'type': 'drop_down', 'allow_duplication': False, 'options_available': all_cards},
+            '路线优先级': {'type': 'drop_down', 'allow_duplication': False, 'options_available': all_routes},
+            '任务优先级': {'type': 'drop_down', 'allow_duplication': False, 'options_available': all_tasks},
+            '拉黑任务': {'type': 'drop_down', 'allow_duplication': False, 'options_available': all_tasks},
+            '移除卡牌列表': {'type': 'drop_down', 'allow_duplication': False, 'options_available': all_cards},
+            '闪光卡牌列表': {'type': 'drop_down', 'allow_duplication': False, 'options_available': all_cards},
+            '复制卡牌列表': {'type': 'drop_down', 'allow_duplication': False, 'options_available': all_cards},
+            '卡牌奖励优先级': {'type': 'drop_down', 'allow_duplication': False, 'options_available': ["梦之边境", "装备包"]},
+            '装备1号位优先级': {'type': 'drop_down', 'allow_duplication': False, 'options_available': all_equipments},
+            '装备2号位优先级': {'type': 'drop_down', 'allow_duplication': False, 'options_available': all_equipments},
+            '装备3号位优先级': {'type': 'drop_down', 'allow_duplication': False, 'options_available': all_equipments},
         }
         self.config_description['游戏语言'] = "国际服请设置为繁体中文"
         self.config_description['闪光优先级'] = (

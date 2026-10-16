@@ -35,11 +35,12 @@ def init_app_config():
     else:
         logger.info(f"No translation available for {locale}, falling back to English/default.")
 
-    from PySide6.QtCore import QLocale
-    if locale.name().startswith("vi") or locale.language() == QLocale.Vietnamese:
-        from ok.gui.i18n.vi_VN import install_vietnamese_translator
-        install_vietnamese_translator(app, locale)
-        logger.info(f"Vietnamese translator installed for {locale}")
+    from PySide6.QtGui import QFont
+    app.setFont(QFont("Segoe UI", 9))
+
+    from ok.gui.i18n.vi_VN import install_vietnamese_translator
+    install_vietnamese_translator(app, locale)
+    logger.info(f"Vietnamese translator installed for {locale}")
 
     # qconfig.theme = cfg.themeMode.value
     setTheme(cfg.themeMode.value)
