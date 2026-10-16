@@ -68,7 +68,7 @@ class TemplateInputDialog(MessageBoxBase):
             label.setFixedWidth(100)
             
             line_edit = LineEdit(self)
-            placeholder = f"default: {default_value}" if default_value else "required"
+            placeholder = f"{self.tr('Default')}: {default_value}" if default_value else self.tr("Required")
             line_edit.setPlaceholderText(placeholder)
             line_edit.setFixedWidth(180)
             

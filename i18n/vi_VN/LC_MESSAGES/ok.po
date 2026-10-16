@@ -1968,3 +1968,255 @@ msgstr "Bố cục dạng dòng"
 
 msgid "Recording will start when window '{hwnd_name}' becomes active."
 msgstr "Quá trình ghi sẽ bắt đầu khi cửa sổ '{hwnd_name}' hoạt động."
+
+msgid "New Task"
+msgstr "Tạo nhiệm vụ mới"
+
+msgid "Default"
+msgstr "Mặc định"
+
+msgid "Required"
+msgstr "Bắt buộc"
+
+msgid "Recording"
+msgstr "Đang ghi hình"
+
+msgid "Stop Recording"
+msgstr "Dừng ghi hình"
+
+msgid "click"
+msgstr "Nhấp chuột (click)"
+
+msgid "middle_click"
+msgstr "Nhấp chuột giữa (middle_click)"
+
+msgid "right_click"
+msgstr "Nhấp chuột phải (right_click)"
+
+msgid "mouse_down"
+msgstr "Nhấn giữ chuột (mouse_down)"
+
+msgid "mouse_up"
+msgstr "Thả chuột (mouse_up)"
+
+msgid "swipe_relative"
+msgstr "Vuốt tỉ lệ (swipe_relative)"
+
+msgid "scroll_relative"
+msgstr "Cuộn chuột tỉ lệ (scroll_relative)"
+
+msgid "scroll"
+msgstr "Cuộn chuột (scroll)"
+
+msgid "swipe"
+msgstr "Vuốt (swipe)"
+
+msgid "click_box_if_name_match"
+msgstr "Nhấp ô theo tên (click_box_if_name_match)"
+
+msgid "click_relative"
+msgstr "Nhấp tỉ lệ (click_relative)"
+
+msgid "middle_click_relative"
+msgstr "Nhấp giữa tỉ lệ (middle_click_relative)"
+
+msgid "move_relative"
+msgstr "Di chuyển chuột tỉ lệ (move_relative)"
+
+msgid "move"
+msgstr "Di chuyển chuột (move)"
+
+msgid "click_box"
+msgstr "Nhấp vào ô (click_box)"
+
+msgid "wait_click_box"
+msgstr "Đợi & nhấp ô (wait_click_box)"
+
+msgid "wait_click_feature"
+msgstr "Đợi & nhấp hình ảnh (wait_click_feature)"
+
+msgid "wait_click_ocr"
+msgstr "Đợi & nhấp chữ OCR (wait_click_ocr)"
+
+msgid "back"
+msgstr "Quay lại (back)"
+
+msgid "input_text"
+msgstr "Nhập văn bản (input_text)"
+
+msgid "send_key"
+msgstr "Gửi phím (send_key)"
+
+msgid "send_key_down"
+msgstr "Nhấn giữ phím (send_key_down)"
+
+msgid "send_key_up"
+msgstr "Thả phím (send_key_up)"
+
+msgid "sleep"
+msgstr "Chờ giây (sleep)"
+
+msgid "wait_until"
+msgstr "Chờ đến khi (wait_until)"
+
+msgid "next_frame"
+msgstr "Khung hình kế (next_frame)"
+
+msgid "sleep_check"
+msgstr "Kiểm tra & Chờ (sleep_check)"
+
+msgid "enable"
+msgstr "Bật nhiệm vụ (enable)"
+
+msgid "pause"
+msgstr "Tạm dừng (pause)"
+
+msgid "unpause"
+msgstr "Tiếp tục (unpause)"
+
+msgid "disable"
+msgstr "Tắt nhiệm vụ (disable)"
+
+msgid "ocr"
+msgstr "Nhận diện OCR (ocr)"
+
+msgid "add_text_fix"
+msgstr "Sửa lỗi chữ OCR (add_text_fix)"
+
+msgid "wait_ocr"
+msgstr "Đợi chữ OCR (wait_ocr)"
+
+msgid "find_feature"
+msgstr "Tìm hình ảnh mẫu (find_feature)"
+
+msgid "get_feature_by_name"
+msgstr "Lấy mẫu theo tên (get_feature_by_name)"
+
+msgid "find_feature_and_set"
+msgstr "Tìm & gán mẫu (find_feature_and_set)"
+
+msgid "wait_feature"
+msgstr "Đợi hình ảnh mẫu (wait_feature)"
+
+msgid "find_one"
+msgstr "Tìm 1 mẫu ảnh (find_one)"
+
+msgid "feature_exists"
+msgstr "Kiểm tra ảnh tồn tại (feature_exists)"
+
+msgid "find_best_match_in_box"
+msgstr "Tìm mẫu khớp nhất (find_best_match_in_box)"
+
+msgid "find_first_match_in_box"
+msgstr "Tìm mẫu đầu tiên (find_first_match_in_box)"
+
+msgid "find_boxes"
+msgstr "Tìm các vùng khớp (find_boxes)"
+
+msgid "box_in_horizontal_center"
+msgstr "Căn giữa ngang (box_in_horizontal_center)"
+
+msgid "box_of_screen"
+msgstr "Vùng màn hình (box_of_screen)"
+
+msgid "box_of_screen_scaled"
+msgstr "Vùng màn hình tỉ lệ (box_of_screen_scaled)"
+
+msgid "height_of_screen"
+msgstr "Chiều cao màn hình (height_of_screen)"
+
+msgid "width_of_screen"
+msgstr "Chiều rộng màn hình (width_of_screen)"
+
+msgid "draw_boxes"
+msgstr "Vẽ khung nhận diện (draw_boxes)"
+
+msgid "clear_box"
+msgstr "Xóa khung vẽ (clear_box)"
+
+msgid "ensure_in_front"
+msgstr "Đưa lên trên cùng (ensure_in_front)"
+
+msgid "is_adb"
+msgstr "Kiểm tra ADB (is_adb)"
+
+msgid "adb_ui_dump"
+msgstr "Trích xuất UI ADB (adb_ui_dump)"
+
+msgid "adb_shell"
+msgstr "Lệnh shell ADB (adb_shell)"
+
+msgid "screenshot"
+msgstr "Chụp ảnh màn hình (screenshot)"
+
+msgid "log_info"
+msgstr "Ghi nhật ký Info (log_info)"
+
+msgid "log_debug"
+msgstr "Ghi nhật ký Debug (log_debug)"
+
+msgid "log_warning"
+msgstr "Ghi cảnh báo (log_warning)"
+
+msgid "log_error"
+msgstr "Ghi lỗi (log_error)"
+
+msgid "info_clear"
+msgstr "Xóa dữ liệu (info_clear)"
+
+msgid "info_incr"
+msgstr "Tăng chỉ số (info_incr)"
+
+msgid "info_add_to_list"
+msgstr "Thêm vào danh sách (info_add_to_list)"
+
+msgid "info_set"
+msgstr "Đặt giá trị (info_set)"
+
+msgid "info_get"
+msgstr "Lấy giá trị (info_get)"
+
+msgid "info_add"
+msgstr "Cộng giá trị (info_add)"
+
+msgid "get_task_by_class"
+msgstr "Lấy task theo lớp (get_task_by_class)"
+
+msgid "get_overlay_view"
+msgstr "Lấy lớp phủ (get_overlay_view)"
+
+msgid "clipboard"
+msgstr "Bộ nhớ tạm (clipboard)"
+
+msgid "is_browser"
+msgstr "Kiểm tra trình duyệt (is_browser)"
+
+msgid "out_of_ratio"
+msgstr "Kiểm tra lệch tỉ lệ (out_of_ratio)"
+
+msgid "calculate_color_percentage"
+msgstr "Tính phần trăm màu (calculate_color_percentage)"
+
+msgid "create_shortcut"
+msgstr "Tạo phím tắt (create_shortcut)"
+
+msgid "tr"
+msgstr "Dịch ngôn ngữ (tr)"
+
+msgid "get_status"
+msgstr "Lấy trạng thái (get_status)"
+
+msgid "ensure_capture"
+msgstr "Đảm bảo chụp màn hình (ensure_capture)"
+
+msgid "update_capture"
+msgstr "Cập nhật khung hình (update_capture)"
+
+msgid "go_to_tab"
+msgstr "Chuyển tab (go_to_tab)"
+
+msgid "notification"
+msgstr "Gửi thông báo (notification)"
+
+msgid "trigger"
+msgstr "Kích hoạt (trigger)"

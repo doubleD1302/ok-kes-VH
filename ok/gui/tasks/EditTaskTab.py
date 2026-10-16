@@ -243,7 +243,7 @@ class EditTaskTab(QWidget):
         self.template_list.setBorderVisible(True)
         self.template_list.setBorderRadius(8)
         self.template_list.setHeaderHidden(True)
-        self.template_list.setMaximumWidth(250)
+        self.template_list.setMaximumWidth(280)
         self._populate_template_list("")
         self.template_list.itemClicked.connect(self.on_template_clicked)
         self.template_list.itemExpanded.connect(self.on_item_expanded_collapsed)
@@ -253,7 +253,7 @@ class EditTaskTab(QWidget):
         
         template_container = QWidget()
         template_container.setLayout(self.template_panel)
-        template_container.setMaximumWidth(250)
+        template_container.setMaximumWidth(280)
         self.layout.addWidget(template_container)
 
         # Right: Editor Area
@@ -263,7 +263,9 @@ class EditTaskTab(QWidget):
         self.right_container_layout.setContentsMargins(0, 0, 0, 0)
         
         self.editor = CodeEditor()
-        self.editor.setFont(QFont("Courier", 10))
+        editor_font = QFont("Consolas", 10)
+        editor_font.setStyleHint(QFont.Monospace)
+        self.editor.setFont(editor_font)
         self.highlighter = PythonHighlighter(self.editor.document())
 
         self.top_layout = QHBoxLayout()
